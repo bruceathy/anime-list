@@ -21,6 +21,8 @@ const router = createBrowserRouter([
   { path: "/home", element: <HomePage /> },
   { path: "/login", element: <LoginPage /> },
   { path: "/mylist", element: <MyList /> },
+  // each page below has child routes to full page view
+  // of series
   { path: "/a-review", element: <AnimeReview /> },
   { path: "/m-review", element: <MangaReview /> },
   { path: "/a-recs", element: <AnimeRecs /> },
