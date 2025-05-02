@@ -53,22 +53,39 @@ input:focus {
   padding: 0.2rem 0.5rem;
 }
 
-ul {
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.login-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.mini-nav {
   list-style: none;
   display: flex;
 }
 
-li {
+.mini-nav li {
   margin: 0 0.7rem;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-li:first-child {
+.mini-nav li:first-child {
   margin-left: 0;
 }
 
-li a {
+.mini-nav li a {
   text-decoration: none;
   color: var(--secondary-color);
   cursor: pointer;
@@ -125,6 +142,34 @@ nav h2 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.error {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.error h1 {
+  font-size: 4rem;
+}
+
+.error p {
+  font-size: 1.5rem;
+}
+
+.err-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  align-items: center;
+  width: 8rem;
+  margin: 1rem auto;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.err-btn:hover {
+  text-decoration: underline;
 }
 
 .container {
