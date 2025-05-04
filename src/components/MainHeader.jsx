@@ -20,8 +20,8 @@ export default function MiniNav() {
                 Anime <i className="fas fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
-                <Link to="/a-review">Reviews</Link>
-                <Link to="/a-recs">Recommendations</Link>
+                <Link to="/anime-review">Reviews</Link>
+                <Link to="/anime-recs">Recommendations</Link>
               </div>
             </div>
           </li>
@@ -31,8 +31,8 @@ export default function MiniNav() {
                 Manga <i className="fas fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
-                <Link to="/m-review">Reviews</Link>
-                <Link to="/m-recs">Recommendations</Link>
+                <Link to="/manga-review">Reviews</Link>
+                <Link to="/manga-recs">Recommendations</Link>
               </div>
             </div>
           </li>

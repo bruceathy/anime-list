@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
@@ -10,6 +9,8 @@ import AnimeReview from "./pages/AnimeReviews.jsx";
 import AnimeRecs from "./pages/AnimeRecs.jsx";
 import MangaRecs from "./pages/MangaRecs.jsx";
 import MangaReview from "./pages/MangaReviews.jsx";
+import "./index.css";
+import "./css/mobile.css";
 
 const router = createBrowserRouter([
   { path: "*", element: <ErrorPage /> },
@@ -21,10 +22,10 @@ const router = createBrowserRouter([
   { path: "/mylist", element: <MyList /> },
   // each page below has child routes to full page view
   // of series
-  { path: "/a-review", element: <AnimeReview /> },
-  { path: "/m-review", element: <MangaReview /> },
-  { path: "/a-recs", element: <AnimeRecs /> },
-  { path: "/m-recs", element: <MangaRecs /> },
+  { path: "/anime-review", element: <AnimeReview /> },
+  { path: "/manga-review", element: <MangaReview /> },
+  { path: "/anime-recs", element: <AnimeRecs /> },
+  { path: "/manga-recs", element: <MangaRecs /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

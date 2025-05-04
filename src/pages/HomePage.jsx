@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MainNav from "../components/MainNav";
 import MiniNav from "../components/MainHeader";
 import PopularSeries from "../components/PopularSeries";
