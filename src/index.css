@@ -334,6 +334,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 11rem 0;
 }
 
 .loading-bar {

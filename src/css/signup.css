@@ -37,13 +37,15 @@ form {
 }
 
 .signup {
-  width: 300px;
+  width: 400px;
   padding: 1rem;
   border-radius: 10px;
   font-size: 1.2rem;
   background-color: var(--secondary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--primary-color);
 }
 
@@ -88,14 +90,14 @@ form {
   font-weight: 600;
   cursor: pointer;
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 .signup-text {
   font-size: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 900px) {
   .login-bg {
     background-image: url("../assets/header2.jpg");
     background-size: cover;
@@ -119,9 +121,5 @@ form {
   .hero i {
     line-height: 1.7rem;
     font-size: 1.5rem;
-  }
-
-  .signup {
-    width: 90%;
   }
 }

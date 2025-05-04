@@ -1,13 +1,18 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 499px) {
   .sidebar {
     display: none;
   }
 
   .banner {
     width: 100vw;
-    height: 16vh;
+    height: 20vh;
     align-self: center;
-    overflow-x: hidden;
+    overflow: hidden;
+  }
+
+  .rounded {
+    width: 97vw;
+    margin: 0 auto;
   }
 
   .rounded {
@@ -50,5 +55,78 @@
 
   .info p {
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .banner {
+    width: 100vw;
+    height: 25vh;
+    align-self: center;
+    overflow: hidden;
+  }
+
+  .rounded {
+    width: 97vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rounded li {
+    margin-bottom: 0.5rem;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .searchbar {
+    width: 100vw;
+  }
+
+  .popular-series h2 {
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .card {
+    min-height: 180px;
+    min-width: 160px;
+    overflow: hidden;
+  }
+
+  .info p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: px) and (max-width: 1080px) {
+  .banner {
+    width: 90vw;
+    height: 30vh;
+    align-self: center;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .rounded {
+    width: 90vw;
+    margin: 0 auto;
   }
 }
