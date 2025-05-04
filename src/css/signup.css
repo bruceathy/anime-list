@@ -1,5 +1,5 @@
 .login-bg {
-  background-image: url("../imgs/signup-bg.avif");
+  background-image: url("../assets/signup-bg.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,7 +110,7 @@ form {
   }
 
   .hero {
-    margin: 3rem 0.4rem 1rem 0.4rem;
+    margin: 3rem 0.4rem 1.5rem 0.4rem;
   }
 
   .hero h1 {

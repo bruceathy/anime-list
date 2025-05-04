@@ -4,10 +4,11 @@
   }
 
   .banner {
-    width: 100vw;
+    width: 120vw;
     height: 20vh;
     align-self: center;
     overflow: hidden;
+    margin: 0 -2rem;
   }
 
   .rounded {

@@ -9,7 +9,7 @@ export default function ErrorPage() {
   return (
     <>
       <MainNav />
-      <div className="container">
+      <div className="err-container">
         <img className="sidebar left" src={jjkleft} />
         <main className="error">
           <h1>Error 404</h1>
