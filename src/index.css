@@ -37,7 +37,7 @@ h2 a {
   cursor: pointer;
 }
 
-input:focus {
+.navbar input:focus {
   outline: none;
   border: none;
   background-color: #000;

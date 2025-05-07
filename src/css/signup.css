@@ -77,7 +77,6 @@ form {
   padding: 0.2rem 0.3rem;
   border: 0;
   border-bottom: 2px solid #5c5c5c;
-  background-color: transparent;
   outline: none;
   margin-bottom: 0.5rem;
 }
@@ -98,7 +97,7 @@ form {
   font-size: 1rem;
 }
 
-@media (min-width: 400px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .login-bg {
     background-image: url("../assets/header2.jpg");
     background-size: cover;
