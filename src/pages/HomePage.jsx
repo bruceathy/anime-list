@@ -15,8 +15,8 @@ export default function HomePage() {
         <img className="sidebar left" src={jjkleft} />
         <main>
           <MiniNav />
-          {/* <PopularSeries /> */}
-          <LoadingAnimation />
+          <PopularSeries />
+          {/* <LoadingAnimation /> */}
           <Footer />
         </main>
         <img className="sidebar right" src={jjkright} />
