@@ -1,5 +1,3 @@
-import LoadingAnimation from "./LoadingAnimation.jsx";
-
 export default function PopularSeries() {
   // use tanstack query to fetch from API, tutorial video is below
   // https://youtu.be/e74rB-14-m8?si=LfITnv-nhdUT4716
@@ -21,13 +19,13 @@ export default function PopularSeries() {
       <div className="popular">
         <h2>Most Popular Anime</h2>
         <div className="carousel" id="popular-anime">
-          {}
+          {/* popular anime */}
         </div>
       </div>
       <div className="popular">
         <h2>Most Popular Manga</h2>
         <div className="carousel" id="popular-manga">
-          <LoadingAnimation />
+          {/* popular manga */}
         </div>
       </div>
     </section>
