@@ -10,9 +10,9 @@ export default function PopularSeries() {
     },
   };
 
-  const response = fetch(url, options);
-  const result = response.json();
-  console.log(result);
+  // const response = fetch(url, options);
+  // const result = response.json();
+  // console.log(result);
 
   return (
     <section className="popular-series">
