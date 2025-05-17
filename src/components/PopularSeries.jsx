@@ -3,13 +3,13 @@ export default function PopularSeries() {
   // https://youtu.be/e74rB-14-m8?si=LfITnv-nhdUT4716
 
   const url = "https://myanimelist.p.rapidapi.com/anime/top/all";
-  // const options = {
-  //   method: "GET",
-  //   headers: {
-  //     "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
-  //     "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
-  //   },
-  // };
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
+      "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
+    },
+  };
 
   const response = fetch(url, options);
   const result = response.json();
