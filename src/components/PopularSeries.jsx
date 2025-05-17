@@ -1,5 +1,9 @@
+import { useQuery } from "@tanstack/react-query";
+
 export default function PopularSeries() {
   // use tanstack query to fetch from API, tutorial video is below
+  // TANSTACK QUERY HAS ALERADY BEEN INSTALLED,
+  // CONTINUE VID AT TIMESTAMP: 4:09
   // https://youtu.be/e74rB-14-m8?si=LfITnv-nhdUT4716
 
   const url = "https://myanimelist.p.rapidapi.com/anime/top/all";
@@ -11,9 +15,7 @@ export default function PopularSeries() {
     },
   };
 
-  const response = fetch(url, options);
-  const result = response.json();
-  console.log(result);
+  const {} = useQuery({});
 
   return (
     <section className="popular-series">
