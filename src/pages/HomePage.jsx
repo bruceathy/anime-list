@@ -16,7 +16,6 @@ export default function HomePage() {
         <main>
           <MiniNav />
           <PopularSeries />
-          {/* <LoadingAnimation /> */}
           <Footer />
         </main>
         <img className="sidebar right" src={jjkright} />
