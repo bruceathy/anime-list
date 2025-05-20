@@ -1,4 +1,4 @@
-export default function PopAniCard({ title, id, userId, body }) {
+export default function PopCard({ title, id, userId, body }) {
   return (
     <div className="card">
       <div className="info">
