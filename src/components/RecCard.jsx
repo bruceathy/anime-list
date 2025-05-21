@@ -1,4 +1,4 @@
-export default function RecCard({ title, id, userId, body }) {
+export default function RecCard({ title, id, body }) {
   return (
     <div class="rec">
       <h3>
@@ -16,7 +16,7 @@ export default function RecCard({ title, id, userId, body }) {
               If you liked:{" "}
               <strong>
                 <a href="${rec.liked.myanimelist_url}" target="_blank">
-                  ${}
+                  ${title}
                 </a>
               </strong>
             </p>
@@ -32,7 +32,7 @@ export default function RecCard({ title, id, userId, body }) {
               Then you should watch:{" "}
               <strong>
                 <a href="${rec.recommendation.myanimelist_url}" target="_blank">
-                  ${}
+                  ${id}
                 </a>
               </strong>
             </p>
@@ -43,7 +43,7 @@ export default function RecCard({ title, id, userId, body }) {
           <img src="${rec.recommendation.picture_url}" />
         </div>
       </div>
-      <p>${}</p>
+      <p>${body}</p>
     </div>
   );
 }
