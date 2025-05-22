@@ -1,4 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
+import LoadingAnimation from "../components/LoadingAnimation";
+import RecCard from "./RecCard";
 
 const fetchAnimeRec = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
