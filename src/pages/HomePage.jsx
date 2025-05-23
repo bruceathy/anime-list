@@ -1,7 +1,6 @@
 import MainNav from "../components/MainNav";
 import MiniNav from "../components/MainHeader";
 import PopularSeries from "../components/PopularSeries";
-import LoadingAnimation from "../components/LoadingAnimation";
 import Footer from "../components/Footer";
 
 import jjkleft from "../assets/jjk-left.jpeg";
