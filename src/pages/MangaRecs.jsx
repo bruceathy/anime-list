@@ -1,6 +1,6 @@
 import MainNav from "../components/MainNav";
 import MiniNav from "../components/MainHeader";
-import LoadingAnimation from "../components/LoadingAnimation";
+import ManRecSec from "../components/ManRecSec";
 import Footer from "../components/Footer";
 import "../css/recs.css";
 
@@ -15,7 +15,7 @@ export default function MangaRecs() {
         <img className="sidebar left" src={jjkleft} />
         <main>
           <MiniNav />
-          <LoadingAnimation />
+          <ManRecSec />
           <Footer />
         </main>
         <img className="sidebar right" src={jjkright} />
