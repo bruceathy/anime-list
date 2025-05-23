@@ -3,27 +3,26 @@
     display: none;
   }
 
+  .navbar h2 {
+    font-size: 3rem;
+  }
+
   .banner {
     width: 120vw;
-    height: 20vh;
+    height: 17vh;
     align-self: center;
     overflow: hidden;
-    margin: 0 -2rem;
+    margin: 0 0.3rem;
   }
 
-  .rounded {
-    width: 97vw;
-    margin: 0 auto;
-  }
-
-  .rounded {
+  .mid-nav {
     width: 97vw;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .rounded li {
+  .mid-nav li {
     margin-bottom: 0.5rem;
   }
 
@@ -60,6 +59,10 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
+  .navbar h2 {
+    font-size: 2.5rem;
+  }
+
   .sidebar {
     display: none;
   }
@@ -71,19 +74,18 @@
     overflow: hidden;
   }
 
-  .rounded {
+  .mid-nav {
     width: 97vw;
     margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .rounded li {
-    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
   }
 
   main {
     width: 100vw;
+  }
+
+  .search-container {
+    width: 40vw;
   }
 
   .searchbar {
@@ -111,23 +113,5 @@
 
   .info p {
     display: none;
-  }
-}
-
-@media screen and (min-width: px) and (max-width: 1080px) {
-  .banner {
-    width: 90vw;
-    height: 30vh;
-    align-self: center;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .rounded {
-    width: 90vw;
-    margin: 0 auto;
   }
 }

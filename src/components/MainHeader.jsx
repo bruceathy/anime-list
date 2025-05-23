@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 
 import banner from "../assets/banner-img.jpeg";
 
-export default function MiniNav() {
+export default function MainHeader() {
   return (
     <>
       <Link
@@ -12,7 +12,7 @@ export default function MiniNav() {
       >
         <img className="banner" src={banner} alt="jujutsu kaisen banner" />
       </Link>
-      <section className="navbar rounded">
+      <section className="navbar mid-nav">
         <ul className="mini-nav">
           <li>
             <div className="dropdown">
