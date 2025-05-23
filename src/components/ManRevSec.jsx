@@ -2,8 +2,18 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RevCard from "./RevCard";
 
+const url =
+  "https://myanimelist.p.rapidapi.com/v2/manga/reviews?p=1&spoilers=false&preliminary=true&include_tags=recommended&exclude_tags=creative%2Cnot_recommended";
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
+    "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
+  },
+};
+
 const fetchMangaRev = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const response = await fetch(url, options);
   if (!response.ok) throw new Error("Network response wasn't ok");
   return response.json();
 };
