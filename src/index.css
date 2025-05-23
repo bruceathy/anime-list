@@ -92,6 +92,12 @@ h2 a {
   cursor: pointer;
 }
 
+.mid-title {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem 1rem;
+}
+
 .dropbtn {
   background-color: transparent;
   color: var(--secondary-color);
@@ -179,7 +185,7 @@ nav h2 {
 }
 
 .sidebar {
-  width: 15vw;
+  width: 13vw;
   height: 90vh;
   position: fixed;
   top: 3.5rem;

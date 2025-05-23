@@ -17,10 +17,11 @@ export default function MangaRecSec() {
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
   return (
-    <>
+    <section>
+      <h3 className="mid-title">Manga Recommendations</h3>
       {data.map((post) => (
         <RecCard key={post.id} {...post} />
       ))}
-    </>
+    </section>
   );
 }
