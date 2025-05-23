@@ -26,15 +26,11 @@ export default function RevCard({ title, id, body }) {
             <strong className="review-tag">${id}</strong>
           </p>
           <div className="options">
-            <button
-              className="read-more"
-              id="read-more"
-              onclick="readFullReview()"
-            >
+            <button className="read-more" id="read-more">
               <i className="fas fa-chevron-down"></i>Read More
             </button>
-            <button class="add-btn">
-              <i class="fas fa-plus"></i>Add to My List
+            <button className="add-btn">
+              <i className="fas fa-plus"></i>Add to My List
             </button>
           </div>
         </div>

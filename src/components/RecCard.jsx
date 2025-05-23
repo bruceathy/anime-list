@@ -1,6 +1,6 @@
 export default function RecCard({ title, id, body }) {
   return (
-    <div class="rec">
+    <div className="rec">
       <h3>
         Anime recommendation from:{" "}
         <strong>
@@ -9,9 +9,9 @@ export default function RecCard({ title, id, body }) {
           </a>
         </strong>
       </h3>
-      <div class="author-choices">
-        <div class="choices">
-          <div class="choice-text">
+      <div className="author-choices">
+        <div className="choices">
+          <div className="choice-text">
             <p>
               If you liked:{" "}
               <strong>
@@ -20,14 +20,14 @@ export default function RecCard({ title, id, body }) {
                 </a>
               </strong>
             </p>
-            <button class="add-btn">
-              <i class="fas fa-plus"></i>Add to My List
+            <button className="add-btn">
+              <i className="fas fa-plus"></i>Add to My List
             </button>
           </div>
           <img src="${rec.liked.picture_url}" />
         </div>
-        <div class="choices">
-          <div class="choice-text">
+        <div className="choices">
+          <div className="choice-text">
             <p>
               Then you should watch:{" "}
               <strong>
@@ -36,8 +36,8 @@ export default function RecCard({ title, id, body }) {
                 </a>
               </strong>
             </p>
-            <button class="add-btn">
-              <i class="fas fa-plus"></i>Add to My List
+            <button className="add-btn">
+              <i className="fas fa-plus"></i>Add to My List
             </button>
           </div>
           <img src="${rec.recommendation.picture_url}" />
