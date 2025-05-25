@@ -27,12 +27,23 @@ export default function AnimeRecSec() {
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
 
-  console.log(data);
+  console.log(data.recommendations.slice(0, 20));
+  // FIND THE BUG IN THE CODE WITH AI BEFORE MOVING ON
   return (
     <section>
       <h3 className="mid-title">Anime Recommendations</h3>
-      {data.map((post) => (
-        <RecCard key={post.id} {...post} />
+      {data.reccommendations.map((anime) => (
+        <RecCard
+          key={anime.id}
+          author_url={anime.author.url}
+          liked_title={anime.liked.title}
+          liked_url={anime.liked.myanimelist_url}
+          author_name={anime.author.name}
+          rec_url={anime.liked.myanimelist_url}
+          rec_title={anime.liked.title}
+          rec_pic={anime.liked.picture_url}
+          desc={anime.description}
+        />
       ))}
     </section>
   );
