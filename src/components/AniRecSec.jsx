@@ -29,10 +29,12 @@ export default function AnimeRecSec() {
 
   console.log(data.recommendations.slice(0, 20));
   // FIND THE CSS  IN THE CODE BEFORE MOVING ON
+  // CREATE MULTIPLE PAGES FOR THE RECS
+  // USING REACT QUERY W/ REACT ROUTER
   return (
     <section>
       <h3 className="mid-title">Anime Recommendations</h3>
-      {data.recommendations.map((anime) => (
+      {data.recommendations.slice(0, 20).map((anime) => (
         <RecCard
           key={anime.id}
           author_url={anime.author.url}
