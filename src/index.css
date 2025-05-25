@@ -56,6 +56,7 @@ h2 a {
 }
 
 .mid-nav {
+  background-color: #430000;
   padding: 0.2rem 0.7rem;
 }
 
@@ -78,6 +79,7 @@ h2 a {
 
 .mini-nav {
   list-style: none;
+
   display: flex;
   padding: 0.5rem 0;
 }
