@@ -28,20 +28,21 @@ export default function AnimeRecSec() {
   if (error) return <p>"Error: {error.message}"</p>;
 
   console.log(data.recommendations.slice(0, 20));
-  // FIND THE BUG IN THE CODE WITH AI BEFORE MOVING ON
+  // FIND THE CSS  IN THE CODE BEFORE MOVING ON
   return (
     <section>
       <h3 className="mid-title">Anime Recommendations</h3>
-      {data.reccommendations.map((anime) => (
+      {data.recommendations.map((anime) => (
         <RecCard
           key={anime.id}
           author_url={anime.author.url}
+          author_name={anime.author.name}
           liked_title={anime.liked.title}
           liked_url={anime.liked.myanimelist_url}
-          author_name={anime.author.name}
-          rec_url={anime.liked.myanimelist_url}
-          rec_title={anime.liked.title}
-          rec_pic={anime.liked.picture_url}
+          liked_pic={anime.liked.picture_url}
+          rec_url={anime.recommendation.myanimelist_url}
+          rec_title={anime.recommendation.title}
+          rec_pic={anime.recommendation.picture_url}
           desc={anime.description}
         />
       ))}

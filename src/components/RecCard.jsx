@@ -5,6 +5,7 @@ export default function RecCard({
   author_name,
   liked_url,
   liked_title,
+  liked_pic,
   rec_url,
   rec_title,
   rec_pic,
@@ -15,7 +16,7 @@ export default function RecCard({
       <h3>
         Anime recommendation from:{" "}
         <strong>
-          <Link to={author_url} target="_blank">
+          <Link className="link-style" to={author_url} target="_blank">
             {author_name}
           </Link>
         </strong>
@@ -26,8 +27,8 @@ export default function RecCard({
             <p>
               If you liked:{" "}
               <strong>
-                <Link to={liked_url} target="_blank">
-                  ${liked_title}
+                <Link className="link-style" to={liked_url} target="_blank">
+                  {liked_title}
                 </Link>
               </strong>
             </p>
@@ -35,15 +36,15 @@ export default function RecCard({
               <i className="fas fa-plus"></i>Add to My List
             </button>
           </div>
-          <img src={rec_pic} alt={rec_title} />
+          <img src={liked_pic} alt={liked_title} />
         </div>
         <div className="choices">
           <div className="choice-text">
             <p>
               Then you should watch:{" "}
               <strong>
-                <Link to={rec_url} target="_blank">
-                  ${rec_title}
+                <Link className="link-style" to={rec_url} target="_blank">
+                  {rec_title}
                 </Link>
               </strong>
             </p>
@@ -54,7 +55,7 @@ export default function RecCard({
           <img src={rec_pic} alt={rec_title} />
         </div>
       </div>
-      <p>${desc}</p>
+      <p>{desc}</p>
     </div>
   );
 }

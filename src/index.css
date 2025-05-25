@@ -331,6 +331,10 @@ nav h2 {
   color: var(--secondary-color);
 }
 
+.link-style {
+  color: var(--secondary-color);
+}
+
 footer {
   color: var(--secondary-color);
   text-align: center;
