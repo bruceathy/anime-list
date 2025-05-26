@@ -29,8 +29,16 @@ export default function AniRevSec() {
   return (
     <section>
       <h3 className="mid-title">Anime Reviews</h3>
-      {data.map((post) => (
-        <RevCard key={post.id} {...post} />
+      {data.map((review) => (
+        <RevCard key={post.id}  user_pic={}
+  user_url={}
+  user_name={}
+  date_str={}
+  mal_url={}
+  rev_title={}
+  rev_text={}
+  rev_tag={}
+  pic_url={} />
       ))}
     </section>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function RevCard({
   user_pic,
   user_url,
@@ -13,27 +15,27 @@ export default function RevCard({
     <div className="review">
       <div className="user">
         <div className="user-info">
-          <img src="${review.user.picture_url}" />
+          <img src={user_pic} />
           <h3>
-            <a href="${review.user.url}" target="_blank">
-              ${title}
-            </a>
+            <Link to={user_url} target="_blank">
+              {user_name}
+            </Link>
           </h3>
         </div>
         <p>
-          <strong>Posted:</strong> ${id}
+          <strong>Posted:</strong> {date_str}
         </p>
       </div>
       <div className="review-content">
         <div className="review-info">
           <h3>
-            <a href="${review.object.mal_url}" target="_blank">
-              ${id}
-            </a>
+            <Link to={mal_url} target="_blank">
+              {rev_title}
+            </Link>
           </h3>
-          <p id="review-text">${body}</p>
+          <p id="review-text">${rev_text}</p>
           <p>
-            <strong className="review-tag">${id}</strong>
+            <strong className="review-tag">{rev_tag}</strong>
           </p>
           <div className="options">
             <button className="read-more" id="read-more">
@@ -44,7 +46,7 @@ export default function RevCard({
             </button>
           </div>
         </div>
-        <img src="${review.object.picture_url}" />
+        <img src={pic_url} />
       </div>
     </div>
   );
