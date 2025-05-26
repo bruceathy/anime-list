@@ -1,4 +1,14 @@
-export default function RevCard({ title, id, body }) {
+export default function RevCard({
+  user_pic,
+  user_url,
+  user_name,
+  date_str,
+  mal_url,
+  rev_title,
+  rev_text,
+  rev_tag,
+  pic_url,
+}) {
   return (
     <div className="review">
       <div className="user">

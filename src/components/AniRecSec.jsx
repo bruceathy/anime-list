@@ -27,8 +27,6 @@ export default function AnimeRecSec() {
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
 
-  console.log(data.recommendations.slice(0, 20));
-  // FIND THE CSS  IN THE CODE BEFORE MOVING ON
   // CREATE MULTIPLE PAGES FOR THE RECS
   // USING REACT QUERY W/ REACT ROUTER
   return (
