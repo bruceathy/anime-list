@@ -32,7 +32,7 @@ export default function AnimeRecSec() {
   return (
     <section>
       <h3 className="mid-title">Anime Recommendations</h3>
-      {data.recommendations.slice(0, 20).map((anime) => (
+      {data.recommendations.map((anime) => (
         <RecCard
           key={anime.id}
           author_url={anime.author.url}
