@@ -56,8 +56,8 @@ h2 a {
 }
 
 .mid-nav {
-  background-color: #300000;
-  padding: 0.2rem 0.7rem;
+  background-image: linear-gradient(to bottom, #300000, #100000);
+  padding: 0.2rem 0;
 }
 
 .nav-links {
@@ -79,19 +79,17 @@ h2 a {
 
 .mini-nav {
   list-style: none;
-
   display: flex;
   padding: 0.5rem 0;
 }
 
 .mini-nav li {
-  margin: 0 0.7rem;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-.mini-nav li:first-child {
-  margin-left: 0;
+.mini-nav li:last-of-type {
+  margin-left: 1rem;
 }
 
 .mini-nav li a {
@@ -109,7 +107,7 @@ h2 a {
 .dropbtn {
   background-color: transparent;
   color: var(--secondary-color);
-  padding: 0;
+  padding-left: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
   font-size: 1.2rem;
@@ -125,7 +123,7 @@ h2 a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #300000;
+  background-color: #100000;
   min-width: 1rem;
   z-index: 1;
 }
@@ -218,6 +216,7 @@ nav h2 {
   display: flex;
   align-items: center;
   background-color: var(--secondary-color);
+  margin-right: 1rem;
 }
 .searchbar {
   font-size: 1.1rem;

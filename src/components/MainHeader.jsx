@@ -8,7 +8,7 @@ export default function MainHeader() {
         <ul className="mini-nav">
           <li>
             <div className="dropdown">
-              <button className="dropbtn">
+              <button className="dropbtn first">
                 Anime <i className="fas fa-caret-down"></i>
               </button>
               <div className="dropdown-content">

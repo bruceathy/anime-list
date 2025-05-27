@@ -16,7 +16,7 @@
   }
 
   .mid-nav {
-    width: 97vw;
+    width: 100vw;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,7 +31,12 @@
   }
 
   .searchbar {
-    width: 100vw;
+    width: 80vw;
+  }
+
+  .search-container {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
 
   .popular-series h2 {
@@ -75,9 +80,17 @@
   }
 
   .mid-nav {
-    width: 97vw;
+    width: 100vw;
     margin: 0 auto;
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 0 0;
+  }
+
+  .dropbtn {
+    padding-left: 0.5rem;
+  }
+
+  .mini-nav li:last-of-type {
+    margin-left: 0.5rem;
   }
 
   main {
@@ -86,10 +99,11 @@
 
   .search-container {
     width: 40vw;
+    margin-right: 0;
   }
 
   .searchbar {
-    width: 100vw;
+    width: 80vw;
   }
 
   .popular-series h2 {

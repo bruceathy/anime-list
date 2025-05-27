@@ -49,8 +49,7 @@ export default function PopularSeries() {
   if (animeLoading || mangaLoading) return <LoadingAnimation />;
   if (animeError || mangaError)
     return <p>"Error: {animeError.message && mangaError.message}"</p>;
-  console.log(animeData.slice(0, 10));
-  console.log(mangaData.slice(0, 10));
+
   return (
     <section className="popular-series">
       <div className="popular">
