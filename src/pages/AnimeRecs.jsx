@@ -12,13 +12,11 @@ export default function AnimeRecs() {
     <>
       <MainNav />
       <div className="container">
-        {/* <img className="sidebar left" src={jjkleft} /> */}
         <main>
           <MiniNav />
           <AniRecSec />
           <Footer />
         </main>
-        {/* <img className="sidebar right" src={jjkright} /> */}
       </div>
     </>
   );

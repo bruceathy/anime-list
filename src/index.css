@@ -56,7 +56,7 @@ h2 a {
 }
 
 .mid-nav {
-  background-color: #430000;
+  background-color: #300000;
   padding: 0.2rem 0.7rem;
 }
 
@@ -125,7 +125,7 @@ h2 a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--primary-color);
+  background-color: #300000;
   min-width: 1rem;
   z-index: 1;
 }
@@ -217,9 +217,10 @@ nav h2 {
   overflow: hidden;
   display: flex;
   align-items: center;
+  background-color: var(--secondary-color);
 }
 .searchbar {
-  background-color: transparent;
+  /* background-color: transparent; */
   font-size: 1.1rem;
   padding: 0.1rem 0.5rem;
   color: #fff;

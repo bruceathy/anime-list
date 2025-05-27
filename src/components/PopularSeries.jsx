@@ -56,7 +56,7 @@ export default function PopularSeries() {
       <div className="popular">
         <h2>Most Popular Anime</h2>
         <div className="carousel" id="popular-anime">
-          {animeData?.slice(0, 10).map((anime) => (
+          {animeData?.slice(0, 20).map((anime) => (
             <PopCard key={anime.id} {...anime} />
           ))}
         </div>
@@ -64,7 +64,7 @@ export default function PopularSeries() {
       <div className="popular">
         <h2>Most Popular Manga</h2>
         <div className="carousel" id="popular-manga">
-          {mangaData?.slice(0, 10).map((manga) => (
+          {mangaData?.slice(0, 20).map((manga) => (
             <PopCard key={manga.id} {...manga} />
           ))}
         </div>
