@@ -29,8 +29,19 @@ export default function MangaRevSec() {
   return (
     <section>
       <h3 className="mid-title">Manga Reviews</h3>
-      {data.map((post) => (
-        <RevCard key={post.id} {...post} />
+      {data.reviews.map((review) => (
+        <RevCard
+          key={review.id}
+          user_pic={review.user.picture_url}
+          user_url={review.user.url}
+          user_name={review.user.name}
+          date_str={review.date.date_str}
+          mal_url={review.object.mal_url}
+          rev_title={review.object.title}
+          rev_text={review.text.full}
+          rev_tag={review.tag}
+          pic_url={review.object.picture_url}
+        />
       ))}
     </section>
   );
