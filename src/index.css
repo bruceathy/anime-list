@@ -220,7 +220,6 @@ nav h2 {
   background-color: var(--secondary-color);
 }
 .searchbar {
-  /* background-color: transparent; */
   font-size: 1.1rem;
   padding: 0.1rem 0.5rem;
   color: #fff;
@@ -228,6 +227,10 @@ nav h2 {
   border: none;
   font-family: "pt sans", sans-serif;
   outline: none;
+}
+
+.searchbar:active {
+  background-color: #fff;
 }
 
 .btn {
