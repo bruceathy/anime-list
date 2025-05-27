@@ -33,7 +33,7 @@ export default function RevCard({
               {rev_title}
             </Link>
           </h3>
-          <p id="review-text">${rev_text}</p>
+          <p id="review-text">{rev_text}</p>
           <p>
             <strong className="review-tag">{rev_tag}</strong>
           </p>

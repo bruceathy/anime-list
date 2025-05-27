@@ -41,8 +41,8 @@ h2 a {
 .navbar input:focus {
   outline: none;
   border: none;
-  background-color: #000;
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .navbar {
@@ -222,15 +222,10 @@ nav h2 {
 .searchbar {
   font-size: 1.1rem;
   padding: 0.1rem 0.5rem;
-  color: #fff;
   border-radius: 1rem 0 0 1rem;
   border: none;
   font-family: "pt sans", sans-serif;
   outline: none;
-}
-
-.searchbar:active {
-  background-color: #fff;
 }
 
 .btn {
