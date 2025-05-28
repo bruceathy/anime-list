@@ -26,6 +26,7 @@ export default function MangaRevSec() {
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
+  console.log(data);
   return (
     <section>
       <h3 className="mid-title">Manga Reviews</h3>
@@ -38,7 +39,8 @@ export default function MangaRevSec() {
           date_str={review.date.date_str}
           mal_url={review.object.mal_url}
           rev_title={review.object.title}
-          rev_text={review.text.full}
+          rev_text={review.text.hidden}
+          rev_text_full={review.text.full}
           rev_tag={review.tag}
           pic_url={review.object.picture_url}
         />

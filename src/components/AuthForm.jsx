@@ -35,10 +35,7 @@ export default function AuthForm() {
         </button>
 
         <p className="signup-text">
-          Already have an account?{" "}
-          <Link id="login" to="#">
-            Login
-          </Link>
+          Already have an account? <Link to="/">Login</Link>
         </p>
       </Form>
     </div>

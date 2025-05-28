@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar";
 export default function MainHeader() {
   return (
     <>
-      <NavLink className="navbar mid-nav">
+      <NavLink className="nav navbar mid-nav">
         <ul className="mini-nav">
           <li>
             <div className="dropdown">

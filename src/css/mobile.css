@@ -34,6 +34,10 @@
     width: 80vw;
   }
 
+  .dropbtn {
+    padding-left: 0;
+  }
+
   .search-container {
     margin-right: 0;
     margin-bottom: 0.5rem;

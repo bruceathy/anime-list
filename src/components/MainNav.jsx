@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function MainNav() {
   return (
-    <NavLink className="navbar">
+    <NavLink className="navbar nav">
       <h2>
         <Link to="/">AnimeList</Link>
       </h2>

@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function LoginHeader() {
   return (
-    <nav className="navbar">
+    <NavLink className="navbar nav">
       <h2>
         <Link to="/">AnimeList</Link>
       </h2>
-    </nav>
+    </NavLink>
   );
 }
