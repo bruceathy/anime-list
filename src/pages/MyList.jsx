@@ -1,6 +1,5 @@
 import MainNav from "../components/MainNav";
 import MiniNav from "../components/MainHeader";
-import LoadingAnimation from "../components/LoadingAnimation";
 import Footer from "../components/Footer";
 
 export default function MyList() {
@@ -10,7 +9,7 @@ export default function MyList() {
       <div className="container">
         <main>
           <MiniNav />
-          <LoadingAnimation />
+          <h3 className="mid-title">My List</h3>
           <Footer />
         </main>
       </div>

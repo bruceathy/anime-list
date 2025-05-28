@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
 export default function MainHeader() {
   return (
     <>
-      <section className="navbar mid-nav">
+      <NavLink className="navbar mid-nav">
         <ul className="mini-nav">
           <li>
             <div className="dropdown">
@@ -34,7 +34,7 @@ export default function MainHeader() {
         </ul>
 
         <SearchBar />
-      </section>
+      </NavLink>
     </>
   );
 }
