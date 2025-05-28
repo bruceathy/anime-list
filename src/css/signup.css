@@ -3,6 +3,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 form {
@@ -16,7 +18,7 @@ form {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 93vh;
+  height: 100vh;
   background-color: #000000d0;
 }
 

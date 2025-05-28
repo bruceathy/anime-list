@@ -211,7 +211,7 @@ nav h2 {
 
 .search-container {
   border: 2px solid var(--secondary-color);
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   overflow: hidden;
   display: flex;
   align-items: center;
