@@ -8,7 +8,7 @@ export default function RevCard({
   mal_url,
   rev_title,
   rev_text,
-  rev_text_full,
+  // rev_text_full,
   rev_tag,
   pic_url,
 }) {
@@ -40,15 +40,7 @@ export default function RevCard({
             <strong className="review-tag">{rev_tag}</strong>
           </p>
           <div className="options">
-            <button
-              className="read-more"
-              id="read-more"
-              onClick={() => {
-                document.getElementById("review-text").innerHTML = {
-                  rev_text_full,
-                };
-              }}
-            >
+            <button className="read-more" id="read-more">
               <i className="fas fa-chevron-down"></i>Read More
             </button>
             <button className="add-btn">

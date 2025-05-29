@@ -57,7 +57,7 @@ h2 a {
 }
 
 .mid-nav {
-  background-image: linear-gradient(to bottom, #300000, #100000);
+  background-image: linear-gradient(to bottom, #100000, #300000);
   padding: 0.2rem 0;
 }
 
@@ -124,7 +124,7 @@ h2 a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #100000;
+  background-color: #280000;
   min-width: 1rem;
   z-index: 1;
 }

@@ -43,6 +43,7 @@ export default function MangaRevSec() {
           rev_text_full={review.text.full}
           rev_tag={review.tag}
           pic_url={review.object.picture_url}
+          onClick={() => console.log(review.text.full)}
         />
       ))}
     </section>
