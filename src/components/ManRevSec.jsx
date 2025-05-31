@@ -26,7 +26,6 @@ export default function MangaRevSec() {
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
-  console.log(data);
   return (
     <section>
       <h3 className="mid-title">Manga Reviews</h3>
