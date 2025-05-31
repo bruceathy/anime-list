@@ -27,7 +27,7 @@ export default function RevCard({
     //   localStorage.setItem("savedMangaList", JSON.stringify(newSavedList));
     //   setSaved(true);
     // }
-    console.log("clicked");
+    console.log(rev_title);
   };
 
   return (

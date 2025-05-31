@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function MainNav() {
   return (
-    <NavLink className="navbar nav">
+    <nav className="navbar nav">
       <h2>
         <Link to="/">AnimeList</Link>
       </h2>
@@ -13,6 +13,6 @@ export default function MainNav() {
           </Link>
         </li>
       </ul>
-    </NavLink>
+    </nav>
   );
 }
