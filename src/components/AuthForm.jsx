@@ -1,5 +1,5 @@
 import { Form, Link } from "react-router-dom";
-
+// authentication form with jwt
 export default function AuthForm() {
   return (
     <div className="signup">
