@@ -3,6 +3,10 @@
     display: none;
   }
 
+  .nav {
+    width: 100vw;
+  }
+
   .navbar h2 {
     font-size: 3rem;
   }
@@ -17,7 +21,7 @@
 
   .mid-nav {
     width: 100vw;
-    margin: 0 auto;
+    margin: 0;
     flex-wrap: wrap;
     justify-content: center;
   }

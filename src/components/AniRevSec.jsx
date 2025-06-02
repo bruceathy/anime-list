@@ -43,6 +43,7 @@ export default function AniRevSec() {
           rev_text={review.text.full}
           rev_tag={review.tag}
           pic_url={review.object.picture_url}
+          mal_id={review.object.mal_id}
         />
       ))}
     </section>

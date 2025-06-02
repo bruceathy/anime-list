@@ -12,6 +12,7 @@ export default function RevCard({
   // rev_text_full,
   rev_tag,
   pic_url,
+  mal_id,
 }) {
   // TRY TO GET READ MORE BUTTON TO WORK
 
@@ -27,7 +28,7 @@ export default function RevCard({
     //   localStorage.setItem("savedMangaList", JSON.stringify(newSavedList));
     //   setSaved(true);
     // }
-    console.log(rev_title);
+    console.log(mal_id);
   };
 
   return (
