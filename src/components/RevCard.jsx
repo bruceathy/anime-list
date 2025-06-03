@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function RevCard({
@@ -9,17 +9,14 @@ export default function RevCard({
   mal_url,
   rev_title,
   rev_text,
-  // rev_text_full,
   rev_tag,
   pic_url,
   mal_id,
 }) {
-  // TRY TO GET READ MORE BUTTON TO WORK
-
-  const [saved, setSaved] = useState(false);
-  const [savedList, setSavedList] = useState(
-    JSON.parse(localStorage.getItem("savedMangaList")) || []
-  );
+  // const [saved, setSaved] = useState(false);
+  // const [savedList, setSavedList] = useState(
+  //   JSON.parse(localStorage.getItem("savedMangaList")) || []
+  // );
 
   const handleSave = () => {
     // if (!saved) {
@@ -58,9 +55,6 @@ export default function RevCard({
             <strong className="review-tag">{rev_tag}</strong>
           </p>
           <div className="options">
-            <button className="read-more" id="read-more">
-              <i className="fas fa-chevron-down"></i>Read More
-            </button>
             <button className="add-btn" onClick={handleSave}>
               <i className="fas fa-plus"></i>Add to My List
             </button>

@@ -40,7 +40,7 @@ export default function AniRevSec() {
           date_str={review.date.date_str}
           mal_url={review.object.mal_url}
           rev_title={review.object.title}
-          rev_text={review.text.full}
+          rev_text={review.text.hidden}
           rev_tag={review.tag}
           pic_url={review.object.picture_url}
           mal_id={review.object.mal_id}
