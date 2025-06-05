@@ -13,10 +13,12 @@ export default function RevCard({
   pic_url,
   mal_id,
 }) {
-  const [saved, setSaved] = useState(false);
-  const [savedList, setSavedList] = useState(
-    JSON.parse(localStorage.getItem("savedMangaList")) || []
-  );
+  // TRY TO GET SERIES TO SAVE TO MY LIST
+
+  // const [saved, setSaved] = useState(false);
+  // const [savedList, setSavedList] = useState(
+  //   JSON.parse(localStorage.getItem("savedMangaList")) || []
+  // );
 
   const handleSave = () => {
     // if (!saved) {
