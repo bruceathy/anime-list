@@ -14,19 +14,9 @@ export default function RevCard({
   mal_id,
 }) {
   // TRY TO GET SERIES TO SAVE TO MY LIST
-
-  // const [saved, setSaved] = useState(false);
-  // const [savedList, setSavedList] = useState(
-  //   JSON.parse(localStorage.getItem("savedMangaList")) || []
-  // );
+  //  HAVE PAGE ONLY SHOW A COUPLE REVIEWS AT A TIME (REACT ROUTER)
 
   const handleSave = () => {
-    // if (!saved) {
-    //   const newSavedList = [...savedList, mangaSeries];
-    //   setSavedList(newSavedList);
-    //   localStorage.setItem("savedMangaList", JSON.stringify(newSavedList));
-    //   setSaved(true);
-    // }
     console.log(mal_id);
   };
 
