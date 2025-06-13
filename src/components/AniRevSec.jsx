@@ -18,6 +18,8 @@ const fetchAnimeRev = async () => {
   return response.json();
 };
 
+// USE TANSTACK QUERY PAGINATION TO SPLIT REVIEWS INTO PAGES
+
 export default function AniRevSec() {
   const { isLoading, data, error } = useQuery({
     queryKey: ["animeRev"],
