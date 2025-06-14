@@ -19,6 +19,8 @@ const fetchAnimeRev = async () => {
 };
 
 // USE TANSTACK QUERY PAGINATION TO SPLIT REVIEWS INTO PAGES
+// https://youtu.be/IiAy1IQoYRI?si=O0UaoL3FFyk0JBAC
+// https://tanstack.com/query/latest/docs/framework/react/examples/pagination
 
 export default function AniRevSec() {
   const { isLoading, data, error } = useQuery({
