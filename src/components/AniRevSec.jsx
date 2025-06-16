@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQueryClient } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RevCard from "./RevCard";
 
@@ -12,8 +12,8 @@ const options = {
   },
 };
 
-const fetchAnimeRev = async () => {
-  const response = await fetch(url, options);
+const fetchAnimeRev = async ({ pageParam = 1 }) => {
+  const response = await fetch(`${url}&p=${pageParam}`, options);
   if (!response.ok) throw new Error("Network response wasn't ok");
   return response.json();
 };
@@ -23,19 +23,29 @@ const fetchAnimeRev = async () => {
 // https://tanstack.com/query/latest/docs/framework/react/examples/pagination
 
 export default function AniRevSec() {
-  const { isLoading, data, error } = useQuery({
-    queryKey: ["animeRev"],
-    queryFn: fetchAnimeRev,
+  const {
+    isLoading,
+    data,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+  } = useInfiniteQuery(["animeRev", "paginated"], fetchAnimeRev, {
+    keepPreviousData: true,
+    getNextPageParam: (lastPage, pages) => lastPage.pagination.current_page + 1,
   });
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
-  console.log(data);
 
   return (
     <section>
       <h3 className="mid-title">Anime Reviews</h3>
-      {data.reviews.map((review) => (
+      {data.pages.map((page, index) => (
+        <React.fr
+      )
+        
+        data.reviews.map((review) => (
         <RevCard
           key={review.id}
           user_pic={review.user.picture_url}
