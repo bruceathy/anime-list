@@ -20,17 +20,21 @@ const fetchAnimeRev = async ({ pageParam = 1 }) => {
 // https://youtu.be/CwcJUknXYoo?si=wB-ZedRar9Vw9iU6
 
 export default function AniRevSec() {
-  const { isLoading, data, error, fetchNextPage, hasNextPage } =
-    useInfiniteQuery({
-      queryKey: ["animeRev"],
-      queryFn: fetchAnimeRev,
-      getNextPageParam: (_, pages) => pages.length + 1,
-      keepPreviousData: true,
-    });
+  const {
+    isLoading,
+    data,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+  } = useInfiniteQuery({
+    queryKey: ["animeRev"],
+    queryFn: fetchAnimeRev,
+    getNextPageParam: (pages) => pages.length + 1,
+  });
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
-  console.log(data);
 
   return (
     <section>
@@ -52,9 +56,16 @@ export default function AniRevSec() {
           />
         ))
       )}
-      {hasNextPage && (
-        <button onClick={() => fetchNextPage()}>Load More</button>
-      )}
+      <button
+        onClick={() => fetchNextPage()}
+        disabled={!hasNextPage || isFetchingNextPage}
+      >
+        {isFetchingNextPage
+          ? "Loading more..."
+          : hasNextPage
+          ? "Load More"
+          : "Nothing more to load"}
+      </button>
     </section>
   );
 }
