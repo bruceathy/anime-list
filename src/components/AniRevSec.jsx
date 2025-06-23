@@ -17,24 +17,20 @@ const fetchAnimeRev = async ({ pageParam = 1 }) => {
   return response.json();
 };
 
-// USE TANSTACK QUERY PAGINATION TO SPLIT REVIEWS INTO PAGES
-// https://youtu.be/IiAy1IQoYRI?si=O0UaoL3FFyk0JBAC
-// https://tanstack.com/query/latest/docs/framework/react/examples/pagination
+// https://youtu.be/CwcJUknXYoo?si=wB-ZedRar9Vw9iU6
 
 export default function AniRevSec() {
   const { isLoading, data, error, fetchNextPage, hasNextPage } =
     useInfiniteQuery({
       queryKey: ["animeRev"],
       queryFn: fetchAnimeRev,
-      getNextPageParam: (lastPage) => {
-        // Assuming the API returns a `next` property with the next page number
-        return lastPage.next;
-      },
+      getNextPageParam: (_, pages) => pages.length + 1,
       keepPreviousData: true,
     });
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
+  console.log(data);
 
   return (
     <section>
