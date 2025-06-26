@@ -17,9 +17,9 @@ const fetchAnimeRev = async () => {
   return response.json();
 };
 
-// https://youtu.be/CwcJUknXYoo?si=wB-ZedRar9Vw9iU6
+//youtu.be/CwcJUknXYoo?si=wB-ZedRar9Vw9iU6
 
-export default function AniRevSec() {
+https: export default function AniRevSec() {
   const { isLoading, data, error } = useQuery({
     queryKey: ["animeRev"],
     queryFn: fetchAnimeRev,
