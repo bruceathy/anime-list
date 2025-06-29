@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RevCard from "./RevCard";
 
