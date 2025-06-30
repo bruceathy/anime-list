@@ -4,7 +4,6 @@ export default function PopCard({
   title,
   score,
   rank,
-  aired_on,
   picture_url,
   myanimelist_url,
 }) {
@@ -17,13 +16,10 @@ export default function PopCard({
           </Link>
         </h3>
         <p>
-          <strong>Score:</strong> {score}
-        </p>
-        <p>
           <strong>Rank:</strong> {rank}
         </p>
         <p>
-          <strong>Aired On:</strong> {aired_on}
+          <strong>Score:</strong> {score}
         </p>
       </div>
     </div>
