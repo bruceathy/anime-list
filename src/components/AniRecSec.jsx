@@ -1,34 +1,41 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RecCard from "./RecCard";
 import "../css/recs.css";
 
-const url = "https://myanimelist.p.rapidapi.com/v2/anime/recommendations?p=1";
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
-    "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
-  },
-};
+const fetchAnimeRec = async (page = 1) => {
+  const url = `https://myanimelist.p.rapidapi.com/v2/anime/recommendations?p=${page}`;
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
+      "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
+    },
+  };
 
-const fetchAnimeRec = async () => {
   const response = await fetch(url, options);
   if (!response.ok) throw new Error("Network response wasn't ok");
   return response.json();
 };
 
 export default function AnimeRecSec() {
+  const [page, setPage] = useState(1);
+  const queryClient = useQueryClient();
   const { isLoading, data, error } = useQuery({
-    queryKey: ["animeRec"],
-    queryFn: fetchAnimeRec,
+    queryKey: ["animeRec", page],
+    queryFn: () => fetchAnimeRec(page),
   });
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
 
-  // CREATE MULTIPLE PAGES FOR THE RECS
-  // USING REACT QUERY W/ REACT ROUTER
+  const handlePageChange = (newPage) => {
+    if (newPage < 1) return;
+    setPage(newPage);
+    queryClient.invalidateQueries(["animeRev"]);
+  };
+
   return (
     <section>
       <h3 className="mid-title">Anime Recommendations</h3>
@@ -46,6 +53,11 @@ export default function AnimeRecSec() {
           desc={anime.description}
         />
       ))}
+      <div className="pagination">
+        <button onClick={() => handlePageChange(page - 1)}>Previous</button>
+        <span>Page {page}</span>
+        <button onClick={() => handlePageChange(page + 1)}>Next</button>
+      </div>
     </section>
   );
 }

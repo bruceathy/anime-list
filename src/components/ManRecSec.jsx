@@ -1,31 +1,40 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RecCard from "./RecCard";
 
-const url = "https://myanimelist.p.rapidapi.com/v2/manga/recommendations?p=1";
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
-    "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
-  },
-};
+const fetchMangaRec = async (page = 1) => {
+  const url = `https://myanimelist.p.rapidapi.com/v2/manga/recommendations?p=${page}`;
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
+      "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
+    },
+  };
 
-const fetchMangaRec = async () => {
   const response = await fetch(url, options);
   if (!response.ok) throw new Error("Network response wasn't ok");
   return response.json();
 };
 
 export default function MangaRecSec() {
+  const [page, setPage] = useState(1);
+  const queryClient = useQueryClient();
   const { isLoading, data, error } = useQuery({
-    queryKey: ["mangaRec"],
-    queryFn: fetchMangaRec,
+    queryKey: ["mangaRec", page],
+    queryFn: () => fetchMangaRec(page),
   });
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
-  console.log(data);
+
+  const handlePageChange = (newPage) => {
+    if (newPage < 1) return;
+    setPage(newPage);
+    queryClient.invalidateQueries(["animeRev"]);
+  };
+
   return (
     <section>
       <h3 className="mid-title">Manga Recommendations</h3>
@@ -43,6 +52,11 @@ export default function MangaRecSec() {
           desc={manga.description}
         />
       ))}
+      <div className="pagination">
+        <button onClick={() => handlePageChange(page - 1)}>Previous</button>
+        <span>Page {page}</span>
+        <button onClick={() => handlePageChange(page + 1)}>Next</button>
+      </div>
     </section>
   );
 }

@@ -30,6 +30,7 @@ export default function AniRevSec() {
   if (error) return <p>"Error: {error.message}"</p>;
 
   const handlePageChange = (newPage) => {
+    if (newPage < 1) return;
     setPage(newPage);
     queryClient.invalidateQueries(["animeRev"]);
   };

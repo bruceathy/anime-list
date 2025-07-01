@@ -1,10 +1,10 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RevCard from "./RevCard";
 
-const fetchMangaRev = async () => {
-  const url =
-    "https://myanimelist.p.rapidapi.com/v2/manga/reviews?p=1&spoilers=false&preliminary=true&include_tags=recommended&exclude_tags=creative%2Cnot_recommended";
+const fetchMangaRev = async (page = 1) => {
+  const url = `https://myanimelist.p.rapidapi.com/v2/manga/reviews?p=${page}&spoilers=false&preliminary=true&include_tags=recommended&exclude_tags=creative%2Cnot_recommended`;
   const options = {
     method: "GET",
     headers: {
@@ -19,13 +19,22 @@ const fetchMangaRev = async () => {
 };
 
 export default function MangaRevSec() {
+  const [page, setPage] = useState(1);
+  const queryClient = useQueryClient();
   const { isLoading, data, error } = useQuery({
-    queryKey: ["mangaRev"],
-    queryFn: fetchMangaRev,
+    queryKey: ["mangaRev", page],
+    queryFn: () => fetchMangaRev(page),
   });
 
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
+
+  const handlePageChange = (newPage) => {
+    if (newPage < 1) return;
+    setPage(newPage);
+    queryClient.invalidateQueries(["animeRev"]);
+  };
+
   return (
     <section>
       <h3 className="mid-title">Manga Reviews</h3>
@@ -45,6 +54,11 @@ export default function MangaRevSec() {
           mal_id={review.object.mal_id}
         />
       ))}
+      <div className="pagination">
+        <button onClick={() => handlePageChange(page - 1)}>Previous</button>
+        <span>Page {page}</span>
+        <button onClick={() => handlePageChange(page + 1)}>Next</button>
+      </div>
     </section>
   );
 }
