@@ -1,6 +1,7 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
+import Pagination from "./Pagination";
 import RecCard from "./RecCard";
 
 const fetchMangaRec = async (page = 1) => {
@@ -29,12 +30,6 @@ export default function MangaRecSec() {
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
 
-  const handlePageChange = (newPage) => {
-    if (newPage < 1) return;
-    setPage(newPage);
-    queryClient.invalidateQueries(["animeRev"]);
-  };
-
   return (
     <section>
       <h3 className="mid-title">Manga Recommendations</h3>
@@ -52,11 +47,12 @@ export default function MangaRecSec() {
           desc={manga.description}
         />
       ))}
-      <div className="pagination">
-        <button onClick={() => handlePageChange(page - 1)}>Previous</button>
-        <span>Page {page}</span>
-        <button onClick={() => handlePageChange(page + 1)}>Next</button>
-      </div>
+      <Pagination
+        page={page}
+        setPage={setPage}
+        queryClient={queryClient}
+        queryKey={"mangaRec"}
+      />
     </section>
   );
 }

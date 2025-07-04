@@ -182,6 +182,10 @@ h2 a {
   color: var(--secondary-color);
 }
 
+.disabled {
+  display: none;
+}
+
 .err-btn:hover {
   text-decoration: underline;
 }

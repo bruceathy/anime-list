@@ -1,6 +1,7 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
+import Pagination from "./Pagination";
 import RevCard from "./RevCard";
 
 const fetchAnimeRev = async (page = 1) => {
@@ -29,12 +30,6 @@ export default function AniRevSec() {
   if (isLoading) return <LoadingAnimation />;
   if (error) return <p>"Error: {error.message}"</p>;
 
-  const handlePageChange = (newPage) => {
-    if (newPage < 1) return;
-    setPage(newPage);
-    queryClient.invalidateQueries(["animeRev"]);
-  };
-
   return (
     <section>
       <h3 className="mid-title">Anime Reviews</h3>
@@ -53,11 +48,12 @@ export default function AniRevSec() {
           mal_id={review.object.mal_id}
         />
       ))}
-      <div className="pagination">
-        <button onClick={() => handlePageChange(page - 1)}>Previous</button>
-        <span>Page {page}</span>
-        <button onClick={() => handlePageChange(page + 1)}>Next</button>
-      </div>
+      <Pagination
+        page={page}
+        setPage={setPage}
+        queryClient={queryClient}
+        queryKey={"animeRev"}
+      />
     </section>
   );
 }
