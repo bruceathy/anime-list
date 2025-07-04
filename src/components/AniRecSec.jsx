@@ -2,6 +2,7 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
 import RecCard from "./RecCard";
+import PaginationWrapper from "./PaginationWrapper";
 import "../css/recs.css";
 
 const fetchAnimeRec = async (page = 1) => {
@@ -53,11 +54,11 @@ export default function AnimeRecSec() {
           desc={anime.description}
         />
       ))}
-      <div className="pagination">
-        <button onClick={() => handlePageChange(page - 1)}>Previous</button>
-        <span>Page {page}</span>
-        <button onClick={() => handlePageChange(page + 1)}>Next</button>
-      </div>
+      <PaginationWrapper
+        page={page}
+        setPage={handlePageChange}
+        queryKey={"animeRec"}
+      />
     </section>
   );
 }
