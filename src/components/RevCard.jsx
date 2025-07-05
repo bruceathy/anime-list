@@ -13,11 +13,14 @@ export default function RevCard({
   pic_url,
   mal_id,
 }) {
-  // TRY TO GET SERIES TO SAVE TO MY LIST
-  //  HAVE PAGE ONLY SHOW A COUPLE REVIEWS AT A TIME (REACT ROUTER)
+  // PASTE INTO PROMPT
+  // how would i make a function for the button with the
+  // classname add-btn that adds the clicked anime to MyList.jsx
 
-  const handleSave = () => {
-    console.log(mal_id);
+  const handleAddToMyList = (animeId) => {
+    // Here, you'll need to implement the logic to add the anime to MyList.jsx
+    // For now, let's just console.log the anime ID
+    console.log(animeId);
   };
 
   return (
@@ -47,7 +50,10 @@ export default function RevCard({
             <strong className="review-tag">{rev_tag}</strong>
           </p>
           <div className="options">
-            <button className="add-btn" onClick={handleSave}>
+            <button
+              className="add-btn"
+              onClick={() => handleAddToMyList(mal_id)}
+            >
               <i className="fas fa-plus"></i>Add to My List
             </button>
           </div>
