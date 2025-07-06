@@ -13,10 +13,6 @@ export default function RevCard({
   pic_url,
   mal_id,
 }) {
-  // PASTE INTO PROMPT
-  // how would i make a function for the button with the
-  // classname add-btn that adds the clicked anime to MyList.jsx
-
   const handleAddToMyList = (animeId) => {
     // Here, you'll need to implement the logic to add the anime to MyList.jsx
     // For now, let's just console.log the anime ID
