@@ -1,8 +1,18 @@
+import { useState } from "react";
 import MainNav from "../components/MainNav";
 import MiniNav from "../components/MainHeader";
 import Footer from "../components/Footer";
 
+import RevCard from "../components/RevCard";
+
 export default function MyList() {
+  const [myAnimeList, setMyAnimeList] = useState([]);
+  const [myMangaList, setMyMangaList] = useState([]);
+
+  const handleAddToMyList = (animeId) => {
+    setMyAnimeList([...myAnimeList, animeId]);
+  };
+
   return (
     <>
       <MainNav />

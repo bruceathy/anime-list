@@ -14,8 +14,6 @@ export default function RevCard({
   mal_id,
 }) {
   const handleAddToMyList = (animeId) => {
-    // Here, you'll need to implement the logic to add the anime to MyList.jsx
-    // For now, let's just console.log the anime ID
     console.log(animeId);
   };
 
