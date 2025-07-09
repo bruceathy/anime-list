@@ -13,6 +13,7 @@ export default function RevCard({
   pic_url,
   mal_id,
 }) {
+  // USE WINDSURF TO FIND SOLUTION
   const handleAddToMyList = (animeId) => {
     console.log(animeId);
   };
