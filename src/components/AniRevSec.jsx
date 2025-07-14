@@ -9,6 +9,7 @@ const fetchAnimeRev = async (page = 1) => {
   const options = {
     method: "GET",
     headers: {
+      // remove api kan and add it to a .env file
       "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
       "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
     },

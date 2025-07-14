@@ -12,6 +12,7 @@ export default function RevCard({
   pic_url,
   mal_id,
 }) {
+  //how do i add an anime to the MyList.jsx page when the add to my list button is clicked, with tanstack query
   const handleAddToMyList = (animeId) => {
     console.log(animeId);
   };
