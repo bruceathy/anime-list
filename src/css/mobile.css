@@ -7,6 +7,11 @@
     width: 100vw;
   }
 
+  .navbar {
+    padding: 0;
+    justify-content: center;
+  }
+
   .navbar h2 {
     font-size: 3rem;
   }
@@ -34,17 +39,8 @@
     width: 100vw;
   }
 
-  .searchbar {
-    width: 80vw;
-  }
-
   .dropbtn {
     padding-left: 0;
-  }
-
-  .search-container {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
   }
 
   .popular-series h2 {
@@ -76,6 +72,11 @@
     font-size: 2.5rem;
   }
 
+  .navbar {
+    padding: 0;
+    justify-content: center;
+  }
+
   .sidebar {
     display: none;
   }
@@ -103,15 +104,6 @@
 
   main {
     width: 100vw;
-  }
-
-  .search-container {
-    width: 40vw;
-    margin-right: 0;
-  }
-
-  .searchbar {
-    width: 80vw;
   }
 
   .popular-series h2 {

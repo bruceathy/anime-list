@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
 
 export default function MainHeader() {
   return (
@@ -32,8 +31,6 @@ export default function MainHeader() {
             <Link to="/mylist">My List</Link>
           </li>
         </ul>
-
-        <SearchBar />
       </nav>
     </>
   );
