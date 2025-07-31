@@ -10,8 +10,8 @@ const fetchAnimeRev = async (page = 1) => {
     method: "GET",
     headers: {
       // FIX THIS
-      "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
-      "X-RapidAPI-Host": process.env.REACT_APP_API_HOST,
+      "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
+      "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
     },
   };
 
