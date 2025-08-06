@@ -2,10 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
 import PopCard from "./PopCard";
 
-// use tanstack query to fetch from API, tutorial video is below
-// https://youtu.be/e74rB-14-m8?si=Wi9-q7OJ-cOnXf10&t=641
+use tanstack query to fetch from API, tutorial video is below
+https://youtu.be/e74rB-14-m8?si=Wi9-q7OJ-cOnXf10&t=641
 
-// hide api key in .env
+hide api key in .env
 
 const animeUrl = "https://myanimelist.p.rapidapi.com/anime/top/all";
 const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
