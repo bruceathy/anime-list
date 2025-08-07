@@ -2,6 +2,9 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
 import PopCard from "./PopCard";
 
+import dotenv from "react-dotenv";
+dotenv.config();
+
 // use tanstack query to fetch from API, tutorial video is below
 // https://youtu.be/e74rB-14-m8?si=Wi9-q7OJ-cOnXf10&t=641
 
@@ -12,8 +15,8 @@ const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
-    "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
+    "X-RapidAPI-Key": dotenv.RAPID_API_KEY,
+    "X-RapidAPI-Host": dotenv.RAPID_API_HOST,
   },
 };
 
