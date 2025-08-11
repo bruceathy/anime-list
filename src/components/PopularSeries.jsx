@@ -14,8 +14,8 @@ const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": process.env.RAPID_API_KEY,
-    "X-RapidAPI-Host": process.env.RAPID_API_HOST,
+    "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
+    "X-RapidAPI-Host": "myanimelist.p.rapidapi.com",
   },
 };
 
