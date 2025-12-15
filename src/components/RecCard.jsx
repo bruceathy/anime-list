@@ -55,7 +55,7 @@ export default function RecCard({
           <img src={rec_pic} alt={rec_title} />
         </div>
       </div>
-      <p>{desc}</p>
+      <p className="rec-desc">{desc}</p>
     </div>
   );
 }

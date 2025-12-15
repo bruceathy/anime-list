@@ -65,6 +65,28 @@
   .info p {
     display: none;
   }
+
+  .user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .author-choices {
+    flex-direction: column;
+  }
+
+  .rec-desc {
+    display: none;
+  }
+
+  .choices {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .choices:first-of-type {
+    margin-bottom: 0.3rem;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
