@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AddBtn from "./AddBtn";
 
 export default function RevCard({
   user_pic,
@@ -10,12 +11,12 @@ export default function RevCard({
   rev_text,
   rev_tag,
   pic_url,
-  mal_id,
+  // mal_id,
 }) {
   //how do i add an anime to the MyList.jsx page when the add to my list button is clicked, with tanstack query
-  const handleAddToMyList = (animeId) => {
-    console.log(animeId);
-  };
+  // const handleAddToMyList = (animeId) => {
+  //   console.log(animeId);
+  // };
 
   return (
     <div className="review">
@@ -44,12 +45,7 @@ export default function RevCard({
             <strong className="review-tag">{rev_tag}</strong>
           </p>
           <div className="options">
-            <button
-              className="add-btn"
-              onClick={() => handleAddToMyList(mal_id)}
-            >
-              <i className="fas fa-plus"></i>Add to My List
-            </button>
+            <AddBtn />
           </div>
         </div>
         <img src={pic_url} />

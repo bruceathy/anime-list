@@ -3,6 +3,7 @@ import { useState } from "react";
 import LoadingAnimation from "../components/LoadingAnimation";
 import Pagination from "./Pagination";
 import RevCard from "./RevCard";
+// CREATE A READ MORE TOGGLE BUTTON TO SHOW THE FULL REVIEW
 
 const fetchAnimeRev = async (page = 1) => {
   const url = `https://myanimelist.p.rapidapi.com/v2/anime/reviews?p=${page}&spoilers=false&preliminary=true&include_tags=recommended&exclude_tags=creative%2Cnot_recommended`;
@@ -43,7 +44,7 @@ export default function AniRevSec() {
           mal_url={review.object.mal_url}
           rev_title={
             review.object.title.length > 50
-              ? review.object.title.slice(0, 50) + "--"
+              ? review.object.title.slice(0, 50) + " ..."
               : review.object.title
           }
           rev_text={review.text.hidden}

@@ -41,13 +41,17 @@ export default function AnimeRecSec() {
           key={anime.id}
           author_url={anime.author.url}
           author_name={anime.author.name}
-          liked_title={anime.liked.title}
+          liked_title={
+            anime.liked.title.length > 50
+              ? anime.liked.title.slice(0, 50) + " ..."
+              : anime.liked.title
+          }
           liked_url={anime.liked.myanimelist_url}
           liked_pic={anime.liked.picture_url}
           rec_url={anime.recommendation.myanimelist_url}
           rec_title={
-            anime.recommendation.title > 50
-              ? anime.recommendation.title.slice(0, 50) + "..."
+            anime.recommendation.title.length > 50
+              ? anime.recommendation.title.slice(0, 50) + " ..."
               : anime.recommendation.title
           }
           rec_pic={anime.recommendation.picture_url}

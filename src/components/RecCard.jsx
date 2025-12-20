@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AddBtn from "./AddBtn";
 
 export default function RecCard({
   author_url,
@@ -32,9 +33,7 @@ export default function RecCard({
                 </Link>
               </strong>
             </p>
-            <button className="add-btn">
-              <i className="fas fa-plus"></i>Add to My List
-            </button>
+            <AddBtn />
           </div>
           <img src={liked_pic} alt={liked_title} />
         </div>
@@ -48,9 +47,7 @@ export default function RecCard({
                 </Link>
               </strong>
             </p>
-            <button className="add-btn">
-              <i className="fas fa-plus"></i>Add to My List
-            </button>
+            <AddBtn />
           </div>
           <img src={rec_pic} alt={rec_title} />
         </div>

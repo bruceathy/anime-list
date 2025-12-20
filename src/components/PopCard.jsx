@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AddBtn from "./AddBtn";
 
 export default function PopCard({
   title,
@@ -21,6 +22,7 @@ export default function PopCard({
         <p>
           <strong>Score:</strong> {score}
         </p>
+        <AddBtn />
       </div>
     </div>
   );

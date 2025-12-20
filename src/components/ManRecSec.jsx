@@ -38,11 +38,19 @@ export default function MangaRecSec() {
           key={manga.id}
           author_url={manga.author.url}
           author_name={manga.author.name}
-          liked_title={manga.liked.title}
+          liked_title={
+            manga.liked.title.length > 50
+              ? manga.liked.title.slice(0, 50) + "..."
+              : manga.liked.title
+          }
           liked_url={manga.liked.myanimelist_url}
           liked_pic={manga.liked.picture_url}
           rec_url={manga.recommendation.myanimelist_url}
-          rec_title={manga.recommendation.title}
+          rec_title={
+            manga.recommendation.title.length > 50
+              ? manga.recommendation.title.slice(0, 50) + "..."
+              : manga.recommendation.title
+          }
           rec_pic={manga.recommendation.picture_url}
           desc={manga.description}
         />
