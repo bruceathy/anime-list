@@ -4,6 +4,7 @@ import LoadingAnimation from "../components/LoadingAnimation";
 import Pagination from "./Pagination";
 import RecCard from "./RecCard";
 
+// HIDE THE API KEYS IN A .ENV FILE
 const fetchMangaRec = async (page = 1) => {
   const url = `https://myanimelist.p.rapidapi.com/v2/manga/recommendations?p=${page}`;
   const options = {

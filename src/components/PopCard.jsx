@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import AddBtn from "./AddBtn";
+// A POPUP WITH MORE INFO ABOUT THE SERIES SHOULD APPEAR WHEN CLICKING ON THE SERIES TITLE
 
 export default function PopCard({
   title,

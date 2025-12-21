@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import AddBtn from "./AddBtn";
+// A POPUP WITH MORE INFO ABOUT THE SERIES SHOULD APPEAR WHEN CLICKING ON THE SERIES TITLE
 
 export default function RevCard({
   user_pic,
@@ -11,13 +12,7 @@ export default function RevCard({
   rev_text,
   rev_tag,
   pic_url,
-  // mal_id,
 }) {
-  //how do i add an anime to the MyList.jsx page when the add to my list button is clicked, with tanstack query
-  // const handleAddToMyList = (animeId) => {
-  //   console.log(animeId);
-  // };
-
   return (
     <div className="review">
       <div className="user">

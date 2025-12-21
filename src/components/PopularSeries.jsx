@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
 import PopCard from "./PopCard";
 
+// HIDE THE API KEYS IN A .ENV FILE
 const animeUrl = "https://myanimelist.p.rapidapi.com/anime/top/all";
 const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
 const options = {
