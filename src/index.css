@@ -15,6 +15,7 @@ body {
   background-color: #252525;
   overscroll-behavior: none;
   font-family: "PT Sans", sans-serif;
+  z-index: 0;
 }
 
 main {
@@ -24,6 +25,36 @@ main {
   justify-content: center;
   margin: 0 auto;
 }
+
+/* --------------------- HERE IS POPUP --------------------- */
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #000000b4;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content p {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+/* --------------------- END OF POPUP --------------------- */
 
 .nav {
   width: 100%;
