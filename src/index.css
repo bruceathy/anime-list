@@ -286,6 +286,7 @@ h2 a {
   font-size: 1rem;
   color: var(--secondary-color);
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .info p {
