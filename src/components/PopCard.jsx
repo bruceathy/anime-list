@@ -2,13 +2,7 @@ import { Link } from "react-router-dom";
 import AddBtn from "./AddBtn";
 // A POPUP WITH MORE INFO ABOUT THE SERIES SHOULD APPEAR WHEN CLICKING ON THE SERIES TITLE
 
-export default function PopCard({
-  title,
-  score,
-  rank,
-  picture_url,
-  myanimelist_url,
-}) {
+export default function PopCard({ title, picture_url, myanimelist_url }) {
   return (
     <div className="card" style={{ backgroundImage: `url(${picture_url})` }}>
       <div className="info">
@@ -17,12 +11,6 @@ export default function PopCard({
             {title}
           </Link>
         </h3>
-        <p>
-          <strong>Rank:</strong> {rank}
-        </p>
-        <p>
-          <strong>Score:</strong> {score}
-        </p>
         <AddBtn />
       </div>
     </div>

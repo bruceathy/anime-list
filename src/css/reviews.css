@@ -47,7 +47,10 @@
   font-size: 1.3rem;
   cursor: pointer;
   color: var(--secondary-color);
-  text-decoration: none;
+}
+
+.review-info h3 {
+  margin-bottom: 0.4rem;
 }
 
 .review-content {
