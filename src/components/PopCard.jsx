@@ -2,32 +2,27 @@ import { useState } from "react";
 import AddBtn from "./AddBtn";
 // A POPUP WITH MORE INFO ABOUT THE SERIES SHOULD APPEAR WHEN CLICKING ON THE SERIES TITLE
 
-export default function PopCard({ title, picture_url }) {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+export default function PopCard({ title, picture_url, rank, score }) {
+  const [showDescription, setShowDescription] = useState(false);
 
-  function showMore() {
-    // alert(`This is ${title}`);
-    setIsPopupOpen(true);
-  }
-
-  function closePopup() {
-    setIsPopupOpen(false);
+  function toggleDescription() {
+    setShowDescription(!showDescription);
   }
 
   return (
     <div className="card" style={{ backgroundImage: `url(${picture_url})` }}>
       <div className="info">
-        <h3>
-          <a onClick={showMore}>{title}</a>
-        </h3>
-        {isPopupOpen && (
-          <div className="popup">
-            <div className="popup-content">
-              <p>{title}</p>
-              <button onClick={closePopup}>X</button>
-            </div>
-          </div>
-        )}
+        <h3>{title}</h3>
+
+        <div className="description">
+          <p>
+            <strong>Rank:</strong> {rank}
+          </p>
+          <p>
+            <strong>Score:</strong> {score}
+          </p>
+        </div>
+
         <AddBtn />
       </div>
     </div>

@@ -62,10 +62,6 @@
     overflow: hidden;
   }
 
-  .info p {
-    display: none;
-  }
-
   .user {
     flex-direction: column;
     align-items: flex-start;
@@ -145,9 +141,5 @@
     min-height: 180px;
     min-width: 160px;
     overflow: hidden;
-  }
-
-  .info p {
-    display: none;
   }
 }
