@@ -1,14 +1,7 @@
-import { useState } from "react";
 import AddBtn from "./AddBtn";
 // A POPUP WITH MORE INFO ABOUT THE SERIES SHOULD APPEAR WHEN CLICKING ON THE SERIES TITLE
 
 export default function PopCard({ title, picture_url, rank, score }) {
-  const [showDescription, setShowDescription] = useState(false);
-
-  function toggleDescription() {
-    setShowDescription(!showDescription);
-  }
-
   return (
     <div className="card" style={{ backgroundImage: `url(${picture_url})` }}>
       <div className="info">
