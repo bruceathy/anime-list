@@ -14,6 +14,12 @@ export default function RevCard({
   rev_tag,
   pic_url,
 }) {
+  const [toggleSeeMore, setToggleSeeMore] = useState(false);
+
+  const toggleSeeMoreHandler = () => {
+    setToggleSeeMore(!toggleSeeMore);
+  };
+
   return (
     <div className="review">
       <div className="user">
@@ -36,7 +42,12 @@ export default function RevCard({
               {rev_title}
             </Link>
           </h3>
-          <p id="review-text">{rev_text}</p>
+          <p id="review-text">
+            {toggleSeeMore ? rev_text.slice(0, 900) : rev_text.slice(0, 200)}
+            <button onClick={toggleSeeMoreHandler}>
+              {toggleSeeMore ? "See Less" : "See More"}
+            </button>{" "}
+          </p>
           <p>
             <strong className="review-tag">{rev_tag}</strong>
           </p>
