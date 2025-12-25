@@ -42,12 +42,14 @@ export default function RevCard({
               {rev_title}
             </Link>
           </h3>
-          <p id="review-text">
-            {toggleSeeMore ? rev_text.slice(0, 900) : rev_text.slice(0, 200)}
-            <button onClick={toggleSeeMoreHandler}>
-              {toggleSeeMore ? "See Less" : "See More"}
-            </button>{" "}
+          <p className="review-text">
+            {toggleSeeMore
+              ? rev_text.slice(0, 900)
+              : rev_text.slice(0, 100) + " ..."}
           </p>
+          <button onClick={toggleSeeMoreHandler}>
+            {toggleSeeMore ? "See Less" : "See More"}
+          </button>{" "}
           <p>
             <strong className="review-tag">{rev_tag}</strong>
           </p>

@@ -49,6 +49,10 @@
   color: var(--secondary-color);
 }
 
+/* .review-text {
+  max-height: 50%;
+} */
+
 .review-info h3 {
   margin-bottom: 0.4rem;
 }
@@ -62,16 +66,12 @@
   font-size: 0.8rem;
 }
 
-#review-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.review-text {
 }
 
 .review-content img {
   width: 100px;
+  max-height: 140px;
   margin-left: 0.5rem;
 }
 
