@@ -12,7 +12,7 @@ import AnimeRecs from "./pages/AnimeRecs.jsx";
 import MangaRecs from "./pages/MangaRecs.jsx";
 import MangaReview from "./pages/MangaReviews.jsx";
 
-import "./index.css";
+import "./css/index.css";
 import "./css/mobile.css";
 
 const client = new QueryClient();
