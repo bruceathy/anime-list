@@ -5,8 +5,6 @@ import RecCard from "./RecCard";
 import Pagination from "./Pagination";
 import "../css/recs.css";
 
-// EXPLAIN REACT ROUTER TO ME LIKE A HIGHSCHOOLER
-
 const fetchAnimeRec = async (page = 1) => {
   const url = `https://myanimelist.p.rapidapi.com/v2/anime/recommendations?p=${page}`;
   const options = {
