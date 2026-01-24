@@ -347,6 +347,29 @@ h2 a {
   color: var(--secondary-color);
 }
 
+.login-note {
+  text-align: center;
+  padding: 0.7rem 0.5rem;
+}
+
+.login-note h2 {
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+}
+
+.login-note-link {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #7d0000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
 footer {
   color: var(--secondary-color);
   text-align: center;

@@ -27,9 +27,9 @@ export default function MainHeader() {
               </div>
             </div>
           </li>
-          {/* <li>
+          <li>
             <Link to="/mylist">My List</Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </>
