@@ -33,7 +33,7 @@ export default function PopAniSec() {
   return (
     <section className="popular-series">
       <div className="popular">
-        <h2>Most Popular Anime</h2>
+        <h3 className="mid-title">Popular Anime Series</h3>
         <div className="carousel">
           {animeData?.map((anime) => (
             <PopCard key={anime.id} {...anime} />

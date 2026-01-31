@@ -33,9 +33,9 @@ export default function PopularSeries() {
   return (
     <section className="popular-series">
       <div className="popular">
-        <h2>Most Popular Manga</h2>
+        <h3 className="mid-title">Popular Manga Series</h3>
         <div className="carousel">
-          {mangaData?.slice(0, 20).map((manga) => (
+          {mangaData?.map((manga) => (
             <PopCard key={manga.id} {...manga} />
           ))}
         </div>
