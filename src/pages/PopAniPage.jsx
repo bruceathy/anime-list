@@ -1,17 +1,17 @@
 import MainNav from "../components/MainNav";
 import MiniNav from "../components/MainHeader";
-import AniRecSec from "../components/AniRecSec";
+import PopAniSec from "../components/PopAniSec";
 import Footer from "../components/Footer";
 import "../css/recs.css";
 
-export default function AnimeRecs() {
+export default function PopAni() {
   return (
     <>
       <MainNav />
       <div className="container">
         <main>
           <MiniNav />
-          <AniRecSec />
+          <PopAniSec />
           <Footer />
         </main>
       </div>

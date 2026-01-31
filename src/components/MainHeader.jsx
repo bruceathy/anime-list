@@ -11,6 +11,7 @@ export default function MainHeader() {
                 Anime <i className="fas fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
+                <Link to="/popular-anime">Popular</Link>
                 <Link to="/anime-review">Reviews</Link>
                 <Link to="/anime-recs">Recommendations</Link>
               </div>
@@ -22,6 +23,7 @@ export default function MainHeader() {
                 Manga <i className="fas fa-caret-down"></i>
               </button>
               <div className="dropdown-content">
+                <Link to="/popular-manga">Popular</Link>
                 <Link to="/manga-review">Reviews</Link>
                 <Link to="/manga-recs">Recommendations</Link>
               </div>

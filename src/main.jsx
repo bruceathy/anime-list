@@ -11,6 +11,8 @@ import AnimeReview from "./pages/AnimeReviews.jsx";
 import AnimeRecs from "./pages/AnimeRecs.jsx";
 import MangaRecs from "./pages/MangaRecs.jsx";
 import MangaReview from "./pages/MangaReviews.jsx";
+import PopAniPage from "./pages/PopAniPage.jsx";
+import PopManPage from "./pages/PopManPage.jsx";
 
 import "./css/index.css";
 import "./css/mobile.css";
@@ -31,6 +33,8 @@ const router = createBrowserRouter([
   { path: "/manga-review", element: <MangaReview /> },
   { path: "/anime-recs", element: <AnimeRecs /> },
   { path: "/manga-recs", element: <MangaRecs /> },
+  { path: "/popular-anime", element: <PopAniPage /> },
+  { path: "/popular-manga", element: <PopManPage /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
@@ -38,5 +42,5 @@ createRoot(document.getElementById("root")).render(
     <QueryClientProvider client={client}>
       <RouterProvider router={router} />
     </QueryClientProvider>
-  </StrictMode>
+  </StrictMode>,
 );
