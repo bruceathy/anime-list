@@ -30,11 +30,13 @@ export default function PopAniSec() {
   if (animeLoading) return <LoadingAnimation />;
   if (animeError) return <p>"Error: {animeError.message}"</p>;
 
+  console.log(animeData);
+
   return (
     <section className="popular-series">
       <div className="popular">
         <h3 className="mid-title">Popular Anime Series</h3>
-        <div className="carousel">
+        <div className="popular-section">
           {animeData?.map((anime) => (
             <PopCard key={anime.id} {...anime} />
           ))}

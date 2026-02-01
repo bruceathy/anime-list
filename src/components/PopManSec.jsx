@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
 import PopCard from "./PopCard";
+import "../css/popular.css";
 
 const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
 const options = {
@@ -30,11 +31,13 @@ export default function PopularSeries() {
   if (mangaLoading) return <LoadingAnimation />;
   if (mangaError) return <p>"Error: {mangaError.message}"</p>;
 
+  console.log(mangaData);
+
   return (
     <section className="popular-series">
       <div className="popular">
         <h3 className="mid-title">Popular Manga Series</h3>
-        <div className="carousel">
+        <div className="popular-section">
           {mangaData?.map((manga) => (
             <PopCard key={manga.id} {...manga} />
           ))}

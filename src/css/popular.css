@@ -1,0 +1,7 @@
+.popular-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  z-index: 2;
+  position: relative;
+}
