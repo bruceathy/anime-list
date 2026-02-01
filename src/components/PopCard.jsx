@@ -1,22 +1,46 @@
 import AddBtn from "./AddBtn";
-// A POPUP WITH MORE INFO ABOUT THE SERIES SHOULD APPEAR WHEN CLICKING ON THE SERIES TITLE
+import "../css/popular.css";
 
-export default function PopCard({ title, picture_url, rank, score }) {
+export default function PopSeries({
+  title,
+  picture_url,
+  rank,
+  score,
+  aired_on,
+  type,
+}) {
   return (
-    <div className="card" style={{ backgroundImage: `url(${picture_url})` }}>
-      <div className="info">
-        <h3>{title}</h3>
+    <div
+      className="pop-series-bg"
+      style={{
+        backgroundImage: `url(${picture_url})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="pop-series-container">
+        <img src={picture_url} />
+        <div className="pop-series-info">
+          <h3>{title.length > 50 ? title.slice(0, 50) + " ..." : title}</h3>
 
-        <div className="description">
-          <p>
-            <strong>Rank:</strong> {rank}
-          </p>
-          <p>
-            <strong>Score:</strong> {score}
-          </p>
+          <div>
+            <p>
+              <strong>Rank:</strong> {rank}
+            </p>
+            <p>
+              <strong>Score:</strong> {score}
+            </p>
+            <p>
+              <strong>Aired On:</strong> {aired_on}
+            </p>
+            <p>
+              <strong>Series Type:</strong> {type}
+            </p>
+          </div>
+
+          <AddBtn />
         </div>
-
-        <AddBtn />
       </div>
     </div>
   );

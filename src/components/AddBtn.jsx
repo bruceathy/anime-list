@@ -1,6 +1,7 @@
 export default function AddBtn() {
-  const handleAddToMyList = () => {
+  const handleAddToMyList = (e) => {
     alert("Added to list");
+    console.log(e.target.title);
   };
   return (
     <button className="add-btn" onClick={handleAddToMyList}>

@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import LoadingAnimation from "../components/LoadingAnimation";
-import PopCard from "./PopCard";
+import TopCard from "./TopCard";
 
 const animeUrl = "https://myanimelist.p.rapidapi.com/anime/top/all";
 const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
@@ -50,18 +50,18 @@ export default function PopularSeries() {
   return (
     <section className="popular-series">
       <div className="popular">
-        <h2>Most Popular Anime</h2>
+        <h2>Top 10 Anime Series</h2>
         <div className="carousel">
-          {animeData?.slice(0, 20).map((anime) => (
-            <PopCard key={anime.id} {...anime} />
+          {animeData?.slice(0, 10).map((anime) => (
+            <TopCard key={anime.id} {...anime} />
           ))}
         </div>
       </div>
       <div className="popular">
-        <h2>Most Popular Manga</h2>
+        <h2>Top 10 Manga Series</h2>
         <div className="carousel">
-          {mangaData?.slice(0, 20).map((manga) => (
-            <PopCard key={manga.id} {...manga} />
+          {mangaData?.slice(0, 10).map((manga) => (
+            <TopCard key={manga.id} {...manga} />
           ))}
         </div>
       </div>
