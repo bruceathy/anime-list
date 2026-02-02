@@ -105,6 +105,38 @@ h2 a {
   margin: 0 0 0.5rem 1rem;
 }
 
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+.searchbar {
+  font-family: "pt sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  border: none;
+  background-color: #fff;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.search-btn {
+  padding: 0.3rem 0.2rem 0.3rem 0.5rem;
+  border: none;
+  background-color: #fff;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.search-btn i {
+  font-size: 1.1rem;
+}
+
 .dropbtn {
   background-color: transparent;
   color: var(--secondary-color);
