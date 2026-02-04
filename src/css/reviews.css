@@ -35,20 +35,34 @@
   margin-top: 0;
 }
 
+.review-bg {
+  margin: 0.7rem 1rem;
+  border: 2px solid #000;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
 .review {
-  background-color: var(--primary-color);
+  /* background-color: #000000d5; */
+  background: linear-gradient(180deg, #000000cc 0 10%, #000000ec 30% 80%);
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   padding: 0.4rem 0.7rem;
-  margin: 0.7rem 1rem;
-  border-radius: 0.3rem;
 }
 
 .review a {
   font-size: 1.3rem;
   cursor: pointer;
   color: var(--secondary-color);
+}
+
+.review-text {
+  color: red;
+}
+
+.review-text-expanded {
+  color: wheat;
 }
 
 .review-info h3 {

@@ -7,10 +7,15 @@ export default function SearchBar() {
     searchBtn.addEventListener("click", searchlist);
   }
   return (
-    <div className="searchbar-container">
-      <button className="search-btn" id="search-btn" onClick={searchlist}>
+    <form method="get" className="searchbar-container">
+      <input
+        type="submit"
+        className="search-btn"
+        id="search-submit"
+        onClick={searchlist}
+      >
         <i className="fas fa-search"></i>
-      </button>
+      </input>
 
       <input
         className="searchbar"
@@ -19,6 +24,6 @@ export default function SearchBar() {
         id="search"
         name="search"
       />
-    </div>
+    </form>
   );
 }

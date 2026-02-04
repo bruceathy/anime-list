@@ -21,44 +21,56 @@ export default function RevCard({
   };
 
   return (
-    <div className="review">
-      <div className="user">
-        <div className="user-info">
-          <img src={user_pic} />
-          <h3>
-            <Link to={user_url} target="_blank">
-              {user_name}
-            </Link>
-          </h3>
-        </div>
-        <p>
-          <strong>Posted:</strong> {date_str}
-        </p>
-      </div>
-      <div className="review-content">
-        <div className="review-info">
-          <h3>
-            <Link to={mal_url} target="_blank">
-              {rev_title}
-            </Link>
-          </h3>
-          <p>
-            <strong className="review-tag">{rev_tag}</strong>
-          </p>
-          <p className="review-text">
-            {toggleSeeMore ? rev_text : rev_text.slice(0, 300) + "..."}
-            {rev_text.length > 300 ? (
-              <button className="read-more" onClick={toggleSeeMoreHandler}>
-                {toggleSeeMore ? "See Less" : "See More"}
-              </button>
-            ) : null}
-          </p>
-
-          <div className="options">
-            <AddBtn />
+    <div
+      className="review-bg"
+      style={{
+        backgroundImage: `url(${pic_url})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="review">
+        <div className="user">
+          <div className="user-info">
+            <img src={user_pic} />
+            <h3>
+              <Link to={user_url} target="_blank">
+                {user_name}
+              </Link>
+            </h3>
           </div>
+          <p>
+            <strong>Posted:</strong> {date_str}
+          </p>
         </div>
-        <img src={pic_url} />
+        <div className="review-content">
+          <div className="review-info">
+            <h3>
+              <Link to={mal_url} target="_blank">
+                {rev_title}
+              </Link>
+            </h3>
+            <p>
+              <strong className="review-tag">{rev_tag}</strong>
+            </p>
+            <p
+              className={toggleSeeMore ? "review-text" : "review-text-expanded"}
+            >
+              {toggleSeeMore ? rev_text : rev_text.slice(0, 300) + "..."}
+              {rev_text.length > 300 ? (
+                <button className="read-more" onClick={toggleSeeMoreHandler}>
+                  {toggleSeeMore ? "See Less" : "See More"}
+                </button>
+              ) : null}
+            </p>
+
+            <div className="options">
+              <AddBtn />
+            </div>
+          </div>
+          <img src={pic_url} />
+        </div>
       </div>
     </div>
   );

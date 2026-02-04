@@ -44,7 +44,7 @@ export default function MangaRevSec() {
           mal_url={review.object.mal_url}
           rev_title={
             review.object.title.length > 50
-              ? review.object.title.slice(0, 50) + " ..."
+              ? review.object.title.slice(0, 50) + "..."
               : review.object.title
           }
           rev_text={review.text.full}

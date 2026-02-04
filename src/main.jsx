@@ -13,6 +13,7 @@ import MangaRecs from "./pages/MangaRecs.jsx";
 import MangaReview from "./pages/MangaReviews.jsx";
 import PopAniPage from "./pages/PopAniPage.jsx";
 import PopManPage from "./pages/PopManPage.jsx";
+import SearchPage from "./pages/SearchPage.jsx";
 
 import "./css/index.css";
 import "./css/mobile.css";
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   { path: "/login", element: <LoginPage /> },
+  { path: "/search", element: <SearchPage /> },
   { path: "/mylist", element: <MyList /> },
   // each page below has child routes to full page view
   // of series
