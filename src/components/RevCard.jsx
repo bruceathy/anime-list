@@ -55,7 +55,7 @@ export default function RevCard({
               <strong className="review-tag">{rev_tag}</strong>
             </p>
             <p
-              className={toggleSeeMore ? "review-text" : "review-text-expanded"}
+              className={toggleSeeMore ? "review-text-expanded" : "review-text"}
             >
               {toggleSeeMore ? rev_text : rev_text.slice(0, 300) + "..."}
               {rev_text.length > 300 ? (
