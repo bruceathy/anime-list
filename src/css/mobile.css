@@ -1,4 +1,8 @@
 @media screen and (max-width: 499px) {
+  .signup {
+    width: 80vw;
+  }
+
   .sidebar {
     display: none;
   }

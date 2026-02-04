@@ -306,12 +306,13 @@ h2 a {
 
 .info {
   padding: 0.3rem;
-  background-color: #000000b4;
+  background: linear-gradient(180deg, #00000000 0 10%, #000000c4 20% 100%);
   color: var(--secondary-color);
 }
 
 .info h3 {
   line-height: 1rem;
+  padding-top: 1rem;
   margin-bottom: 0.3rem;
   font-size: 1rem;
   color: var(--secondary-color);

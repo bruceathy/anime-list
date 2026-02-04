@@ -51,6 +51,9 @@ form {
   color: var(--primary-color);
 }
 
+.signup h1 {
+  line-height: 2.5rem;
+}
 .form-control {
   width: 100%;
   text-align: left;
