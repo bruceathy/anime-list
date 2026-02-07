@@ -58,12 +58,12 @@ export default function RevCard({
               className={toggleSeeMore ? "review-text-expanded" : "review-text"}
             >
               {toggleSeeMore ? rev_text : rev_text.slice(0, 300) + "..."}
-              {rev_text.length > 300 ? (
-                <button className="read-more" onClick={toggleSeeMoreHandler}>
-                  {toggleSeeMore ? "See Less" : "See More"}
-                </button>
-              ) : null}
             </p>
+            {rev_text.length > 300 ? (
+              <button className="read-more" onClick={toggleSeeMoreHandler}>
+                {toggleSeeMore ? "See Less" : "See More"}
+              </button>
+            ) : null}
 
             <div className="options">
               <AddBtn />
