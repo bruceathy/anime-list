@@ -1,4 +1,8 @@
 @media screen and (max-width: 499px) {
+  .login-link {
+    display: none;
+  }
+
   .signup {
     width: 80vw;
   }
@@ -29,11 +33,9 @@
   }
 
   .banner {
-    width: 120vw;
-    height: 17vh;
-    align-self: center;
-    overflow: hidden;
-    margin: 0 0.3rem;
+    width: 100vw;
+    height: 19vh;
+    border: none;
   }
 
   .mid-nav {
@@ -143,9 +145,8 @@
 
   .banner {
     width: 100vw;
-    height: 25vh;
-    align-self: center;
-    overflow: hidden;
+    height: 22vh;
+    border: none;
   }
 
   .mid-nav {
