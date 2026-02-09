@@ -54,6 +54,7 @@
   font-size: 1.3rem;
   cursor: pointer;
   color: var(--secondary-color);
+  justify-content: start;
 }
 
 .review-text-expanded {
@@ -72,7 +73,7 @@
 }
 
 .review-content p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .review-content img {

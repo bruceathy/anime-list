@@ -15,10 +15,6 @@
     font-size: 0.9rem;
   }
 
-  .sidebar {
-    display: none;
-  }
-
   .nav {
     width: 100vw;
   }
@@ -36,6 +32,8 @@
     width: 100vw;
     height: 19vh;
     border: none;
+    margin: 0;
+    border-radius: 0;
   }
 
   .mid-nav {
@@ -139,14 +137,12 @@
     justify-content: center;
   }
 
-  .sidebar {
-    display: none;
-  }
-
   .banner {
     width: 100vw;
     height: 22vh;
     border: none;
+    margin: 0;
+    border-radius: 0;
   }
 
   .mid-nav {
@@ -192,5 +188,9 @@
     grid-template-columns: 1fr 1fr;
     width: 90vw;
     margin: 0 auto;
+  }
+  .banner {
+    width: 100vw;
+    height: 22vh;
   }
 }
