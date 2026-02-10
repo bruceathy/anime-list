@@ -1,11 +1,13 @@
-export default function SearchBar() {
-  function searchlist() {
-    const search = document.getElementById("search").value;
-    const searchBtn = document.getElementById("search-btn");
-    alert(`Searching for ${search}...`);
+import { useState } from "react";
 
-    searchBtn.addEventListener("click", searchlist);
+export default function SearchBar() {
+  const [search, setSearch] = useState("");
+
+  function searchlist() {
+    alert(`Searching...`);
+    setSearch("");
   }
+
   return (
     <div className="searchbar-container">
       <button className="search-btn" id="search-btn" onClick={searchlist}>
