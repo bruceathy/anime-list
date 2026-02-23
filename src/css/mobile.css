@@ -146,7 +146,7 @@
 
   .banner {
     width: 100vw;
-    height: 22vh;
+    height: 27vh;
     border: none;
     margin: 0;
     border-radius: 0;
@@ -156,6 +156,9 @@
     width: 100vw;
     margin: 0 auto;
     padding: 0 0.5rem 0 0;
+  }
+  .carousel-container {
+    border-radius: 0;
   }
 
   .dropbtn {
@@ -197,7 +200,7 @@
     margin: 0 auto;
   }
   .banner {
-    width: 100vw;
+    width: 80vw;
     height: 22vh;
   }
 }

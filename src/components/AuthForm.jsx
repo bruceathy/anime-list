@@ -11,6 +11,11 @@ export default function AuthForm() {
         </div>
 
         <div className="form-control">
+          <label>Username: </label>
+          <input id="username" className="signup-input" type="text" required />
+        </div>
+
+        <div className="form-control">
           <label>Password: </label>
           <input
             id="password"
