@@ -5,7 +5,7 @@ export default function SearchBar() {
   const [search, setSearch] = useState("");
 
   function searchlist() {
-    alert(`Searching...`);
+    alert(`search: ${search}`);
     setSearch("");
   }
 
