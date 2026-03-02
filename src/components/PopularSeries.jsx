@@ -50,8 +50,8 @@ export default function PopularSeries() {
   return (
     <section className="popular-series">
       <div className="popular">
-        <h2>Top 10 Anime Series</h2>
         <div className="carousel-container">
+          <h2>Top 10 Anime Series</h2>
           <div className="carousel">
             {animeData?.slice(0, 10).map((anime) => (
               <TopCard key={anime.id} {...anime} />
@@ -60,8 +60,8 @@ export default function PopularSeries() {
         </div>
       </div>
       <div className="popular">
-        <h2>Top 10 Manga Series</h2>
         <div className="carousel-container">
+          <h2>Top 10 Manga Series</h2>
           <div className="carousel">
             {mangaData?.slice(0, 10).map((manga) => (
               <TopCard key={manga.id} {...manga} />

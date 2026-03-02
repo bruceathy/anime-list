@@ -34,13 +34,11 @@ export default function PopAniSec() {
 
   return (
     <section className="popular-series">
-      <div className="popular">
-        <h3 className="mid-title">Popular Anime Series</h3>
-        <div className="popular-section">
-          {animeData?.map((anime) => (
-            <PopCard key={anime.id} {...anime} />
-          ))}
-        </div>
+      <h3 className="mid-title">Popular Anime Series</h3>
+      <div className="popular-section">
+        {animeData?.map((anime) => (
+          <PopCard key={anime.id} {...anime} />
+        ))}
       </div>
     </section>
   );

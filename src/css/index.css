@@ -20,6 +20,7 @@ body {
   background-attachment: fixed;
   background-blend-mode: overlay, normal;
   font-family: "PT Sans", sans-serif;
+  height: 100%;
 }
 
 main {
@@ -265,7 +266,7 @@ main a {
 
 .popular-series {
   color: #fff;
-  z-index: 1;
+  background-color: #000000;
 }
 
 .popular-series h2 {
@@ -275,7 +276,6 @@ main a {
 
 .carousel-container {
   background-color: #000000;
-  border-radius: 0.3rem;
   padding: 0.5rem 0.3rem;
   overflow: hidden;
 }

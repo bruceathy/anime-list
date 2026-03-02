@@ -5,7 +5,7 @@ import LogInNote from "../components/LogInNote";
 
 export default function MyList() {
   return (
-    <>
+    <div className="bg">
       <MainNav />
       <div className="container">
         <main>
@@ -24,6 +24,6 @@ export default function MyList() {
           <Footer />
         </main>
       </div>
-    </>
+    </div>
   );
 }

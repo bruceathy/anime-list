@@ -1,0 +1,9 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 0.3rem;
+  color: var(--secondary-color);
+}
