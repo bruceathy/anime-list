@@ -6,4 +6,14 @@
   background-color: var(--primary-color);
   border-radius: 0.3rem;
   color: var(--secondary-color);
+  max-height: 40vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #7d0000 #000000;
+}
+
+.results-container::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ffffff;
 }
