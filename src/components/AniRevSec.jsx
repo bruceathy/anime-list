@@ -31,7 +31,7 @@ export default function AniRevSec() {
   if (error) return <p>"Error: {error.message}"</p>;
 
   return (
-    <section>
+    <section className="reviews-area">
       <h3 className="mid-title">Anime Reviews</h3>
       {data.reviews.map((review) => (
         <RevCard

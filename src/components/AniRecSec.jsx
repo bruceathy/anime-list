@@ -32,7 +32,7 @@ export default function AnimeRecSec() {
   if (error) return <p>"Error: {error.message}"</p>;
 
   return (
-    <section>
+    <section className="recommendations">
       <h3 className="mid-title">Anime Recommendations</h3>
       {data.recommendations.map((anime) => (
         <RecCard

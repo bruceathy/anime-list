@@ -10,12 +10,18 @@
   margin-bottom: 0.5rem;
 }
 
+.recommendations {
+  background-color: var(--primary-color);
+  padding: 0 0.5rem;
+}
+
 .rec:first-of-type {
   margin-top: 0;
 }
 
 .rec {
-  background-color: var(--primary-color);
+  background-color: #474747;
+  background: linear-gradient(180deg, #474747 0%, #000000 100%);
   color: var(--secondary-color);
   margin: 0.7rem 1rem;
   border-radius: 0.3rem;

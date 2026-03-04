@@ -6,6 +6,11 @@
   margin-left: 1rem;
 }
 
+.reviews-area {
+  background-color: var(--primary-color);
+  padding: 0 0.5rem;
+}
+
 .user {
   display: flex;
   align-items: center;

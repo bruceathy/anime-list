@@ -32,7 +32,7 @@ export default function MangaRecSec() {
   if (error) return <p>"Error: {error.message}"</p>;
 
   return (
-    <section>
+    <section className="recommendations">
       <h3 className="mid-title">Manga Recommendations</h3>
       {data.recommendations.map((manga) => (
         <RecCard
