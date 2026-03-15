@@ -8,7 +8,7 @@ export default function AnimeReviews() {
   return (
     <>
       <MainNav />
-      <div className="container">
+      <div className="containe">
         <main>
           <MiniNav />
           <AnimeRevSec />

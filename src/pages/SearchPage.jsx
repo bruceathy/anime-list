@@ -5,7 +5,7 @@ import MangaResults from "../components/MangaResults";
 import Footer from "../components/Footer";
 import "../css/search.css";
 
-// tesr
+// tesrclass=
 
 export default function SearchPage() {
   return (
