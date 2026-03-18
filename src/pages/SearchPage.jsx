@@ -5,6 +5,7 @@ import MangaResults from "../components/MangaResults";
 import Footer from "../components/Footer";
 import "../css/search.css";
 
+// SETUP CLAUDE IN A SIDE WINDOW TERMINAL LIKE YESTERDAY
 export default function SearchPage() {
   return (
     <>
