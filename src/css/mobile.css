@@ -1,4 +1,12 @@
 @media screen and (max-width: 499px) {
+  body,
+  .reviews-area,
+  .recommendations,
+  .popular-series,
+  .carousel-container {
+    background-color: #001b3d;
+  }
+
   .login-link {
     display: none;
   }
