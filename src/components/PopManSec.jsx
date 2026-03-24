@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import LoadingAnimation from "../components/LoadingAnimation";
+import LoadingAnimation from "components/loading-elements/LoadingAnimation";
 import PopCard from "./PopCard";
 import "../css/popular.css";
 
