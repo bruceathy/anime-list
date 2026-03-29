@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import LoadingAnimation from "components/loading-elements/LoadingAnimation";
+import LoadingAnimation from "../components/loading-elements/LoadingAnimation";
 import TopCard from "./TopCard";
 
 const animeUrl = "https://myanimelist.p.rapidapi.com/anime/top/all";
