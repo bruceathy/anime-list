@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function SearchBar() {
   const [search, setSearch] = useState("");
-  const [type, setType] = useState("anime");
+  const [type, setType] = useState("all");
   const navigate = useNavigate();
 
   function handleSearch() {
@@ -13,25 +13,30 @@ export default function SearchBar() {
     setSearch("");
   }
 
-  // function handleKeyDown(e) {
-  //   if (e.key === "Enter") {
-  //     handleSearch();
-  //   }
-  // }
-
   return (
     <div className="searchbar-container">
-      <button className="search-btn" id="search-btn" onClick={handleSearch}>
-        <i className="fas fa-search"></i>
-      </button>
+      <select
+        name="search-type"
+        id="search-type"
+        onChange={(e) => setType(e.target.value)}
+      >
+        <option value="all">All</option>
+        <option value="anime">Anime</option>
+        <option value="manga">Manga</option>
+      </select>
+      <div>
+        <button className="search-btn" id="search-btn" onClick={handleSearch}>
+          <i className="fas fa-search"></i>
+        </button>
 
-      <input
-        className="searchbar"
-        type="text"
-        placeholder="Search..."
-        id="search"
-        name="search"
-      />
+        <input
+          className="searchbar"
+          type="text"
+          placeholder="Search..."
+          id="search"
+          name="search"
+        />
+      </div>
     </div>
   );
 }
