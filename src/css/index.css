@@ -109,8 +109,8 @@ h2 a {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.5rem;
   margin-right: 1rem;
-  border-radius: 1rem;
   overflow: hidden;
   background-color: #fff;
 }
@@ -125,8 +125,19 @@ h2 a {
   cursor: pointer;
 }
 
+.select-search {
+  font-family: "pt sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  border: none;
+  background-color: #f3f3f3;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 .search-btn {
-  padding: 0.3rem 0.2rem 0.3rem 0.5rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
   border: none;
   background-color: #fff;
   color: var(--primary-color);

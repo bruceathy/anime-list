@@ -16,6 +16,7 @@ export default function SearchBar() {
   return (
     <div className="searchbar-container">
       <select
+        className="select-search"
         name="search-type"
         id="search-type"
         onChange={(e) => setType(e.target.value)}
@@ -24,19 +25,16 @@ export default function SearchBar() {
         <option value="anime">Anime</option>
         <option value="manga">Manga</option>
       </select>
-      <div>
-        <button className="search-btn" id="search-btn" onClick={handleSearch}>
-          <i className="fas fa-search"></i>
-        </button>
-
-        <input
-          className="searchbar"
-          type="text"
-          placeholder="Search..."
-          id="search"
-          name="search"
-        />
-      </div>
+      <input
+        className="searchbar"
+        type="text"
+        placeholder="Search..."
+        id="search"
+        name="search"
+      />
+      <button className="search-btn" id="search-btn" onClick={handleSearch}>
+        <i className="fas fa-search"></i>
+      </button>
     </div>
   );
 }
