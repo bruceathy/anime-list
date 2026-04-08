@@ -131,7 +131,7 @@ h2 a {
   font-weight: 500;
   padding: 0.2rem 0.5rem 0.2rem 0.2rem;
   border: none;
-  background-color: #f3f3f3;
+  background-color: #fbfbfb;
   color: var(--primary-color);
   cursor: pointer;
 }
