@@ -1,10 +1,12 @@
 export default function RecsLoad() {
   return (
-    <div className="loading-wave">
-      <div className="loading-bar"></div>
-      <div className="loading-bar"></div>
-      <div className="loading-bar"></div>
-      <div className="loading-bar"></div>
+    <div>
+      <div className="loading-wave">
+        <div className="loading-bar"></div>
+        <div className="loading-bar"></div>
+        <div className="loading-bar"></div>
+        <div className="loading-bar"></div>
+      </div>
     </div>
   );
 }
