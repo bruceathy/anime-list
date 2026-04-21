@@ -1,12 +1,10 @@
+import LoadingAnimation from "./LoadingAnimation";
+
 export default function RecsLoad() {
   return (
-    <div>
-      <div className="loading-wave">
-        <div className="loading-bar"></div>
-        <div className="loading-bar"></div>
-        <div className="loading-bar"></div>
-        <div className="loading-bar"></div>
-      </div>
-    </div>
+    <section className="recommendations">
+      <h3 className="mid-title">Anime Recommendations</h3>
+      <LoadingAnimation />
+    </section>
   );
 }

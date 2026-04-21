@@ -1,6 +1,6 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
-import LoadingAnimation from "../components/loading-elements/LoadingAnimation";
+import RecsLoad from "./loading-elements/RecsLoad";
 import Pagination from "./Pagination";
 import RecCard from "./RecCard";
 
@@ -28,7 +28,7 @@ export default function MangaRecSec() {
     queryFn: () => fetchMangaRec(page),
   });
 
-  if (isLoading) return <LoadingAnimation />;
+  if (isLoading) return <RecsLoad />;
   if (error) return <p>"Error: {error.message}"</p>;
 
   return (
