@@ -28,7 +28,7 @@ export default function AnimeRecSec() {
     queryFn: () => fetchAnimeRec(page),
   });
 
-  if (isLoading) return <RecsLoad />;
+  if (isLoading) return <RecsLoad type="Anime" />;
   if (error) return <p>"Error: {error.message}"</p>;
 
   return (

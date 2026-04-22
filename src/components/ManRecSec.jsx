@@ -28,7 +28,7 @@ export default function MangaRecSec() {
     queryFn: () => fetchMangaRec(page),
   });
 
-  if (isLoading) return <RecsLoad />;
+  if (isLoading) return <RecsLoad type="Manga" />;
   if (error) return <p>"Error: {error.message}"</p>;
 
   return (
