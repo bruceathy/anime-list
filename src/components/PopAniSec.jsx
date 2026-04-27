@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import LoadingAnimation from "../components/loading-elements/LoadingAnimation";
+import PopLoad from "../components/loading-elements/PopLoad";
 import PopCard from "./PopCard";
 
 const animeUrl = "https://myanimelist.p.rapidapi.com/anime/top/all";
@@ -27,7 +27,7 @@ export default function PopAniSec() {
     queryFn: fetchPopularAnime,
   });
 
-  if (animeLoading) return <LoadingAnimation />;
+  if (animeLoading) return <PopLoad type="Anime" />;
   if (animeError) return <p>"Error: {animeError.message}"</p>;
 
   console.log(animeData);

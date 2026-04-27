@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import LoadingAnimation from "../components/loading-elements/LoadingAnimation";
+import PopLoad from "../components/loading-elements/PopLoad";
 import PopCard from "./PopCard";
 import "../css/popular.css";
 
@@ -28,7 +28,7 @@ export default function PopularSeries() {
     queryFn: fetchPopularManga,
   });
 
-  if (mangaLoading) return <LoadingAnimation />;
+  if (mangaLoading) return <PopLoad type="Manga" />;
   if (mangaError) return <p>"Error: {mangaError.message}"</p>;
 
   return (
