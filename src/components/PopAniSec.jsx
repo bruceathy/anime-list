@@ -2,6 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import PopLoad from "../components/loading-elements/PopLoad";
 import PopCard from "./PopCard";
 
+//  MAKE LOADING POPCARDS
+
 const animeUrl = "https://myanimelist.p.rapidapi.com/anime/top/all";
 const options = {
   method: "GET",

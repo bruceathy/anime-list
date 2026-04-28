@@ -1,5 +1,7 @@
 import LoadingAnimation from "./LoadingAnimation";
 
+//  MAKE LOADING POP CARDS
+
 export default function HomeLoad() {
   return (
     <section className="popular-series">

@@ -1,5 +1,7 @@
 import LoadingAnimation from "./LoadingAnimation";
 
+//  MAKE LOADING REVIEW CARDS
+
 export default function RevLoad({ type }) {
   return (
     <section className="reviews-area">

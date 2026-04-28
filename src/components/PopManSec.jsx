@@ -3,6 +3,8 @@ import PopLoad from "../components/loading-elements/PopLoad";
 import PopCard from "./PopCard";
 import "../css/popular.css";
 
+//  MAKE LOADING POPCARDS
+
 const mangaUrl = "https://myanimelist.p.rapidapi.com/manga/top/all";
 const options = {
   method: "GET",
