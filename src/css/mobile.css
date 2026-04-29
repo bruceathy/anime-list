@@ -133,6 +133,10 @@
     border: 3px solid #000;
     border-radius: 0.3rem;
   }
+
+  .series-type {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {

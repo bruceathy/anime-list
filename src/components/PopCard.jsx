@@ -22,7 +22,7 @@ export default function PopSeries({
       <div className="pop-series-container">
         <img src={picture_url} />
         <div className="pop-series-info">
-          <h3>{title.length > 30 ? title.slice(0, 30) + " ..." : title}</h3>
+          <h3>{title.length > 45 ? title.slice(0, 45) + " ..." : title}</h3>
 
           <div>
             <p>
@@ -34,7 +34,7 @@ export default function PopSeries({
             <p>
               <strong>Aired On:</strong> {aired_on}
             </p>
-            <p>
+            <p className="series-type">
               <strong>Series Type:</strong> {type}
             </p>
           </div>
