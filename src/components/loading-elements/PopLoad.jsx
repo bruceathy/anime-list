@@ -1,4 +1,5 @@
 import LoadingAnimation from "./LoadingAnimation";
+import LoadingPopCard from "./LoadingPopCard";
 
 //  MAKE LOADING POPCARDS
 
@@ -7,7 +8,7 @@ export default function PopLoad({ type }) {
     <section className="popular-series">
       <h3 className="mid-title">Popular {type} Series</h3>
       <div className="popular-section">
-        <LoadingAnimation />
+        <LoadingPopCard />
       </div>
     </section>
   );
