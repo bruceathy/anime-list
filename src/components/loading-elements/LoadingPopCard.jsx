@@ -8,7 +8,7 @@ export default function LoadingPopCard() {
           <LoadingAnimation />
         </div>
         <div className="pop-series-info">
-          <h3>Loading Series</h3>
+          <h3>Loading Series ...</h3>
 
           <div>
             <p>
