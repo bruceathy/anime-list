@@ -9,6 +9,8 @@ export default function PopLoad({ type }) {
       <h3 className="mid-title">Popular {type} Series</h3>
       <div className="popular-section">
         <LoadingPopCard />
+        <LoadingPopCard />
+        <LoadingPopCard />
       </div>
     </section>
   );

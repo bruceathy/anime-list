@@ -2,11 +2,9 @@ import LoadingAnimation from "./LoadingAnimation";
 
 export default function LoadingPopCard() {
   return (
-    <div className="pop-series-bg">
-      <div className="pop-series-container">
-        <div>
-          <LoadingAnimation />
-        </div>
+    <div className="load-pop-series-bg">
+      <div className="load-pop-series-container">
+        <div className="load-pop-series-img"></div>
         <div className="pop-series-info">
           <h3>Loading Series ...</h3>
 
