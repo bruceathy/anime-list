@@ -1,4 +1,4 @@
-import LoadingAnimation from "./LoadingAnimation";
+import LoadingHomeCard from "./LoadingHomeCard";
 
 //  MAKE LOADING POP CARDS
 
@@ -9,7 +9,7 @@ export default function HomeLoad() {
         <div className="carousel-container">
           <h2>Top 10 Anime Series</h2>
           <div className="carousel">
-            <LoadingAnimation />
+            <LoadingHomeCard />
           </div>
         </div>
       </div>
@@ -17,7 +17,7 @@ export default function HomeLoad() {
         <div className="carousel-container">
           <h2>Top 10 Manga Series</h2>
           <div className="carousel">
-            <LoadingAnimation />
+            <LoadingHomeCard />
           </div>
         </div>
       </div>

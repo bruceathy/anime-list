@@ -420,6 +420,40 @@ footer {
   padding: 0.7rem 0.5rem 0.3rem 0.5rem;
 }
 
+.loading-card {
+  margin: 0 0.3rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 260px;
+  min-width: 160px;
+  border-radius: 0.3rem;
+  border: 3px solid var(--primary-color);
+}
+
+.loading-card-info {
+  padding: 0.3rem;
+  background: linear-gradient(180deg, #00000000 0 10%, #000000c4 20% 100%);
+  color: var(--secondary-color);
+}
+
+.loading-card-info h3 {
+  line-height: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.loading-card-description {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
 .loading-wave {
   width: 300px;
   height: 100px;
