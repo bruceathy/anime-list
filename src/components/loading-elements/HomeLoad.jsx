@@ -10,6 +10,13 @@ export default function HomeLoad() {
           <h2>Top 10 Anime Series</h2>
           <div className="carousel">
             <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
           </div>
         </div>
       </div>
@@ -17,6 +24,12 @@ export default function HomeLoad() {
         <div className="carousel-container">
           <h2>Top 10 Manga Series</h2>
           <div className="carousel">
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
+            <LoadingHomeCard />
             <LoadingHomeCard />
           </div>
         </div>
