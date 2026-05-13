@@ -20,17 +20,12 @@
 }
 
 .rec {
-  background-color: #474747;
-  background: linear-gradient(180deg, #474747 0%, #000000 100%);
+  background-color: #202020;
   color: var(--secondary-color);
   margin: 0.7rem 1rem;
   border-radius: 0.3rem;
   padding: 0.5rem;
 }
-
-/* .rec h3 {
-  margin-bottom: 0.5rem;
-} */
 
 .author-choices {
   display: flex;
