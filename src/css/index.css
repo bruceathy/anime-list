@@ -11,9 +11,15 @@
 }
 
 body {
-  background-color: #00275a;
+  background-image: url("../assets/header1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #001632;
   font-family: "PT Sans", sans-serif;
   height: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -280,7 +286,7 @@ main a {
 }
 
 .carousel-container {
-  background-color: #000000;
+  background-color: #000000d1;
   padding: 0.5rem 0.3rem;
   overflow: hidden;
 }

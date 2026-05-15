@@ -6,7 +6,7 @@ import "../css/recs.css";
 
 export default function AnimeRecs() {
   return (
-    <>
+    <body>
       <MainNav />
       <div className="container">
         <main>
@@ -15,6 +15,6 @@ export default function AnimeRecs() {
           <Footer />
         </main>
       </div>
-    </>
+    </body>
   );
 }
