@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-//CHECK LAST CLAUDE CONVERSATION
 
 export default function LogInNote() {
   return (

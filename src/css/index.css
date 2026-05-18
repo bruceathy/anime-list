@@ -398,8 +398,15 @@ main a {
 }
 
 .login-note {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 0.7rem 0.5rem;
+  background-color: #000000c1;
+  color: var(--secondary-color);
+  width: 70%;
 }
 
 .login-note h2 {
@@ -412,6 +419,7 @@ main a {
 .login-note-link {
   color: var(--secondary-color);
   font-size: 1.2rem;
+  width: 40vw;
   font-weight: 600;
   cursor: pointer;
   background-color: #7d0000;
