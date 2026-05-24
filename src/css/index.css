@@ -143,6 +143,10 @@ h2 a {
   cursor: pointer;
 }
 
+.select-search:focus {
+  outline: none;
+}
+
 .search-btn {
   padding: 0.2rem 0.5rem 0.2rem 0.2rem;
   border: none;
@@ -399,7 +403,7 @@ main a {
 }
 
 .login-note {
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
