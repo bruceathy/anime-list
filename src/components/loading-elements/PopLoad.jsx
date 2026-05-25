@@ -8,9 +8,9 @@ export default function PopLoad({ type }) {
     <section className="popular-series">
       <h3 className="mid-title">Popular {type} Series</h3>
       <div className="popular-section">
-        <LoadingPopCard />
-        <LoadingPopCard />
-        <LoadingPopCard />
+        {Array.from({ length: 10 }).map((_, i) => (
+          <LoadingPopCard key={i} />
+        ))}
       </div>
     </section>
   );
