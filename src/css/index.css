@@ -213,8 +213,15 @@ h2 a {
 }
 
 .error {
-  text-align: center;
-  margin: 8rem auto 23rem;
+  background-color: #0000006f;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  width: 50%;
 }
 
 .error h1 {
