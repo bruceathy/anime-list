@@ -433,7 +433,7 @@ main a {
 .login-note-link {
   color: var(--secondary-color);
   font-size: 1.2rem;
-  width: 40vw;
+  width: 15vw;
   font-weight: 600;
   cursor: pointer;
   background-color: #7d0000;
