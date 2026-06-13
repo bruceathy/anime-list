@@ -4,7 +4,7 @@
   .recommendations,
   .popular-series,
   .carousel-container {
-    background-color: #0000006f;
+    background-color: #000000d6;
   }
 
   .login-link {
@@ -136,6 +136,11 @@
 
   .series-type {
     display: none;
+  }
+
+  footer {
+    background-color: #000000d6;
+    margin: 0;
   }
 }
 
