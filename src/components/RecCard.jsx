@@ -14,7 +14,7 @@ export default function RecCard({
 }) {
   return (
     <div className="rec">
-      <h3>
+      <h3 className="rec-from">
         Anime recommendation from:{" "}
         <strong>
           <Link className="link-style" to={author_url} target="_blank">

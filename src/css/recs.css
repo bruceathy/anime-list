@@ -11,7 +11,7 @@
 }
 
 .recommendations {
-  background-color: #00000092;
+  background-color: #000000;
   padding: 0 0.5rem;
 }
 
@@ -25,6 +25,15 @@
   margin: 0.7rem 1rem;
   border-radius: 0.3rem;
   padding: 0.5rem;
+}
+
+.rec-from {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.rec-from strong {
+  margin-left: 0.5rem;
 }
 
 .author-choices {
