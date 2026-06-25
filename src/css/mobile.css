@@ -7,6 +7,14 @@
     background-color: #000000d6;
   }
 
+  .reviews-area {
+    height: 100vh;
+  }
+
+  .recommendations {
+    height: 100vh;
+  }
+
   .login-link {
     display: none;
   }
