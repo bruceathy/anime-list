@@ -4,7 +4,9 @@ export default function MangaResults() {
       <h3>Manga search results for: </h3>
       <div className="">
         <ul>
-          <li></li>
+          <li>test item</li>
+          <li>test item</li>
+          <li>test item</li>
         </ul>
       </div>
     </div>
